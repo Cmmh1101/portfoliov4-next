@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/components/styles/Home.module.css'
-import { ThemeModeProvider } from '../context/ThemeModeContext'
+import Head from "next/head";
+// import styles from "@/components/styles/Home.module.css";
+import HomeComponent from "../components/home/HomeComponent";
+import { useTheme } from "../context/ThemeModeContext";
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { darkMode, handleToggleTheme } = useTheme();
   return (
     <>
       <Head>
@@ -15,30 +14,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeModeProvider>
-      <main className={styles.main}>
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
+      <main style={darkMode ? { color: "white", backgroundColor: 'black' } : { color: "black", backgroundColor: 'white' }}>
+      <div>
+      <button onClick={handleToggleTheme}>
+        Toggle Theme (Dark Mode: {darkMode ? 'On' : 'Off'})
+      </button>
+    </div>
+          <HomeComponent />
+          {/* <div className={styles.center}>
             <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
+              className={styles.logo}
+              src="/next.svg"
+              alt="Next.js Logo"
+              width={180}
+              height={37}
               priority
             />
-          </div>
-        </div>
-      </main>
-      </ThemeModeProvider>
-      
+            <div className={styles.thirteen}>
+              <Image
+                src="/thirteen.svg"
+                alt="13"
+                width={40}
+                height={31}
+                priority
+              />
+            </div>
+          </div> */}
+        </main>
     </>
-  )
+  );
 }

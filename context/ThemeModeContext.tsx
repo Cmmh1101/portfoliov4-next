@@ -6,8 +6,8 @@ interface IThemeModeContext {
   light: string;
   darkMode: boolean;
   handleToggleTheme: () => void;
-  englishMode: boolean;
-  handleToggleLanguage: () => void;
+  // englishMode: boolean;
+  // handleToggleLanguage: () => void;
 //   styles: any;
   setDarkMode: (value: boolean) => void;
 }
@@ -27,20 +27,29 @@ interface ThemeModeProviderProps {
 }
 
 function ThemeModeProvider({ children }: ThemeModeProviderProps) {
+  const [initialValue, setInitialValue] = useState<string | null>()
+  const [isClient, setIsClient] = useState(false)
   const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem("darkMode");
-    const initialValue = JSON.parse(saved!);
-    return initialValue === null ? true : initialValue;
+    // Perform localStorage action
+    if (typeof window !== 'undefined') {
+      // Perform localStorage action
+      const saved = localStorage.getItem("darkMode");
+      const initialValue = JSON.parse(saved!);
+      return initialValue === null ? true : initialValue;
+    }
+    //   const saved = localStorage.getItem("darkMode");
+    // const initialValue = JSON.parse(saved!);
+    
   });
-  const [englishMode, setEnglishMode] = useState(() => {
-    const saved = localStorage.getItem("englishMode");
-    const initialValue = JSON.parse(saved!);
-    return initialValue;
-  });
+  // const [englishMode, setEnglishMode] = useState(() => {
+  //   const saved = localStorage.getItem("englishMode");
+  //   const initialValue = JSON.parse(saved!);
+  //   return initialValue;
+  // });
 
-  const handleToggleLanguage = () => {
-    setEnglishMode(!englishMode);
-  };
+  // const handleToggleLanguage = () => {
+  //   setEnglishMode(!englishMode);
+  // };
 
   const handleToggleTheme = () => {
     setDarkMode(!darkMode);
@@ -60,16 +69,23 @@ function ThemeModeProvider({ children }: ThemeModeProviderProps) {
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
-    localStorage.setItem("englishMode", JSON.stringify(englishMode));
-  }, [darkMode, englishMode]);
+    // localStorage.setItem("englishMode", JSON.stringify(englishMode));
+  }, [darkMode, /* englishMode */ ]);
+
+  useEffect(() => {
+    setIsClient(true)
+    // Perform localStorage action
+    const saved = localStorage.getItem("darkMode");
+    setInitialValue(JSON.parse(saved!));
+  }, [])
 
   const contextValue: IThemeModeContext = {
     dark,
     light,
     darkMode,
     handleToggleTheme,
-    englishMode,
-    handleToggleLanguage,
+    // englishMode,
+    // handleToggleLanguage,
     // styles,
     setDarkMode,
   };
