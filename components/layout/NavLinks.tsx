@@ -28,7 +28,7 @@ const NavLinks = () => {
       <nav className='flex justify-around capitalize'>
           {links.map((link, i) => {
               return (
-                <Link href={link.url} className='mx-4'>{link.title}</Link>
+                  <Link href={link.url} key={i} className='mx-4'>{link.title}</Link>
               )
           })}
           
