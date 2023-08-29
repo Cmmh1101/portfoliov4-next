@@ -1,9 +1,9 @@
 import React from "react";
-import MainHero from "./MainHero";
+import MainHero from "../UI/MainHero";
 
 const HomeComponent = () => {
   return (
-    <div>
+    <div className="relative">
       <MainHero />
     </div>
   );

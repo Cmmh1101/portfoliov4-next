@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
-
-const Footer = (props: Props) => {
-  const year = new Date()
+const Footer = () => {
+  const fullYear = new Date().getFullYear();
   return (
-    <footer>Footer</footer>
-  )
-}
+    <footer className="flex justify-center items-center h-10">
+      <p>{fullYear} | Carla Montano </p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
