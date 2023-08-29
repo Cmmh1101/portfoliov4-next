@@ -1,25 +1,32 @@
 import { mount } from 'cypress/react';
-import React, { ReactNode } from 'react';
-import { ThemeModeProvider } from "../../context/ThemeModeContext"
 import ReactDOM from 'react-dom';
+import { wrapComponentWithTheme } from '../config/testConfig';
 
-interface ProvidersProps {
-  children: ReactNode;
-}
-
-const Providers: React.FC<ProvidersProps> = ({ children }) => (
-  <ThemeModeProvider>{children}</ThemeModeProvider>
-);
-
-Cypress.Commands.add('mount', (component) => {
+Cypress.Commands.add('mount', (Component, pageProps) => {
   cy.window().then((win) => {
     const { document } = win;
     const el = document.createElement('div');
     document.body.appendChild(el);
 
-    ReactDOM.render(<Providers>{component}</Providers>, el);
+    const componentWithTheme = wrapComponentWithTheme(Component, pageProps);
+    ReactDOM.render(componentWithTheme, el);
   });
 });
+
+
+// const Providers: React.FC<ProvidersProps> = ({ children }) => (
+//   <ThemeModeProvider>{children}</ThemeModeProvider>
+// );
+
+// Cypress.Commands.add('mount', (component) => {
+//   cy.window().then((win) => {
+//     const { document } = win;
+//     const el = document.createElement('div');
+//     document.body.appendChild(el);
+
+//     ReactDOM.render(<Providers>{component}</Providers>, el);
+//   });
+// });
 
 
 declare global {
@@ -37,6 +44,8 @@ Cypress.Commands.add('dataCy', (value) => {
   return cy.get(`[data-cy=${value}]`);
 });
 
+
+export { mount };
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite

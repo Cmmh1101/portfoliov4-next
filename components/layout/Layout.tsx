@@ -1,20 +1,19 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 type Props = {
-    children: JSX.Element | JSX.Element[]
-  };
-  
+  children: JSX.Element | JSX.Element[];
+};
 
-const Layout = ({children}: Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <>
       <Navbar />
       <main>{children}</main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
