@@ -11,37 +11,11 @@ import React from "react";
 
 const MainHero = () => {
   return (
-    <div
-      className="hero-text"
-    >
-      {/* <animated.div style={styles}> */}
-        <h1>
-          {/* {englishMode ? (
-            <>
-              <span>Desarrolladora</span> de Sofware
-            </>
-          ) : (
-            <> */}
-              <span>Software</span> Engineer
-            {/* </>
-          )} */}
-        </h1>
-        {/* <p>{englishMode ? spText : enText}</p> */}
-        {/* <Button
-          onClick={() => scrollTo("#projects")}
-          style={
-            darkMode
-              ? { color: light, backgroundColor: dark }
-              : { color: dark, borderColor: dark }
-          }
-          outline
-          type="button"
-        >
-          {englishMode ? esButton : enButton}
-        </Button> */}
-      {/* </animated.div> */}
+    <div className="hero-text">
+      <h1>
+        <span>Software</span> Engineer
+      </h1>
     </div>
-    // <div>Title: Carla Montano</div>
   );
 };
 

@@ -16,9 +16,9 @@ export default function Home() {
       </Head>
       <main style={darkMode ? { color: "white", backgroundColor: 'black' } : { color: "black", backgroundColor: 'white' }}>
       <div>
-      <button onClick={handleToggleTheme}>
+      {/* <button onClick={handleToggleTheme}>
         Toggle Theme (Dark Mode: {darkMode ? 'On' : 'Off'})
-      </button>
+      </button> */}
     </div>
           <HomeComponent />
           {/* <div className={styles.center}>

@@ -1,14 +1,11 @@
+// ThemeContext.tsx
 import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-// import { useSpring } from 'react-spring';
 
 interface IThemeModeContext {
   dark: string;
   light: string;
   darkMode: boolean;
   handleToggleTheme: () => void;
-  // englishMode: boolean;
-  // handleToggleLanguage: () => void;
-//   styles: any;
   setDarkMode: (value: boolean) => void;
 }
 
@@ -27,66 +24,41 @@ interface ThemeModeProviderProps {
 }
 
 function ThemeModeProvider({ children }: ThemeModeProviderProps) {
-  const [initialValue, setInitialValue] = useState<string | null>()
-  const [isClient, setIsClient] = useState(false)
+  // Initialize darkMode based on localStorage if available, or use a default value
   const [darkMode, setDarkMode] = useState(() => {
-    // Perform localStorage action
     if (typeof window !== 'undefined') {
-      // Perform localStorage action
+      // Check if localStorage is available on the client side
       const saved = localStorage.getItem("darkMode");
       const initialValue = JSON.parse(saved!);
       return initialValue === null ? true : initialValue;
+    } else {
+      // Default value when running on the server (SSR)
+      return true; // Change this to your desired server-side default
     }
-    //   const saved = localStorage.getItem("darkMode");
-    // const initialValue = JSON.parse(saved!);
-    
   });
-  // const [englishMode, setEnglishMode] = useState(() => {
-  //   const saved = localStorage.getItem("englishMode");
-  //   const initialValue = JSON.parse(saved!);
-  //   return initialValue;
-  // });
 
-  // const handleToggleLanguage = () => {
-  //   setEnglishMode(!englishMode);
-  // };
-
+  // Function to toggle darkMode
   const handleToggleTheme = () => {
     setDarkMode(!darkMode);
   };
+
+  // Colors for dark and light themes
   const dark = "#15141a";
   const light = "#fbfbfe";
 
-//   const styles = useSpring({
-//     from: {
-//       opacity: 0,
-//     },
-//     to: {
-//       opacity: 1,
-//     },
-//     delay: 1200,
-//   });
-
+  // Effect to update localStorage when darkMode changes
   useEffect(() => {
-    localStorage.setItem("darkMode", JSON.stringify(darkMode));
-    // localStorage.setItem("englishMode", JSON.stringify(englishMode));
-  }, [darkMode, /* englishMode */ ]);
-
-  useEffect(() => {
-    setIsClient(true)
-    // Perform localStorage action
-    const saved = localStorage.getItem("darkMode");
-    setInitialValue(JSON.parse(saved!));
-  }, [])
+    if (typeof window !== 'undefined') {
+      // Check if localStorage is available on the client side
+      localStorage.setItem("darkMode", JSON.stringify(darkMode));
+    }
+  }, [darkMode]);
 
   const contextValue: IThemeModeContext = {
     dark,
     light,
     darkMode,
     handleToggleTheme,
-    // englishMode,
-    // handleToggleLanguage,
-    // styles,
     setDarkMode,
   };
 
