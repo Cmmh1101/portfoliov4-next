@@ -12,14 +12,22 @@ const links = [
         title: "home"
     },
     {
-        url: "/",
+        url: "/projects",
         title: "projects"
     },{
-        url: "/",
+        url: "/about",
         title: "about"
     },{
-        url: "/",
+        url: "/experience",
         title: "experience"
+    },
+    {
+        url: "/contact",
+        title: "contact"
+    },
+    {
+        url: "/blog",
+        title: "blog"
     },
 ]
 

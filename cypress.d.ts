@@ -1,4 +1,4 @@
-import { mount } from 'cypress/react';
+import { mount } from './cypress/support/commands';
 
 declare global {
   namespace Cypress {
