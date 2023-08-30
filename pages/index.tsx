@@ -2,6 +2,7 @@ import Head from "next/head";
 // import styles from "@/components/styles/Home.module.css";
 import HomeComponent from "../components/home/HomeComponent";
 import { useTheme } from "../context/ThemeModeContext";
+import HomeInteractive from "../components/home/HomeInteractive";
 
 
 export default function Home() {
@@ -19,27 +20,10 @@ export default function Home() {
       {/* <button onClick={handleToggleTheme}>
         Toggle Theme (Dark Mode: {darkMode ? 'On' : 'Off'})
       </button> */}
-    </div>
-          <HomeComponent />
-          {/* <div className={styles.center}>
-            <Image
-              className={styles.logo}
-              src="/next.svg"
-              alt="Next.js Logo"
-              width={180}
-              height={37}
-              priority
-            />
-            <div className={styles.thirteen}>
-              <Image
-                src="/thirteen.svg"
-                alt="13"
-                width={40}
-                height={31}
-                priority
-              />
-            </div>
-          </div> */}
+        </div>
+        <HomeInteractive />
+          {/* <HomeComponent /> */}
+         
         </main>
     </>
   );

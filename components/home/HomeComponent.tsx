@@ -1,5 +1,5 @@
 import React from "react";
-import MainHero from "../UI/MainHero";
+import MainHero from "./MainHero";
 
 const HomeComponent = () => {
   return (
