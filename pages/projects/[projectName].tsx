@@ -4,6 +4,7 @@ import { getAllProjects, getProjectByName } from '@/components/data/projectsData
 import { Project } from '@/components/interfaces/Project';
 import SingleProject from '@/components/components/project-detail/SingleProject';
 import ProjectHeader from '@/components/components/project-detail/ProjectHeader';
+import ProjectsList from '@/components/components/projects/ProjectsList';
 
 type Props = {};
 
@@ -37,20 +38,11 @@ const SingleProjectPage = (props: Props) => {
   const otherProjects = allProjects.filter(item => item.name !== projectName);
 
   return (
-    <div>
+    <>
       <ProjectHeader title={project.title} imageSrc={project.image} />
-      <h1>Single Project Page</h1>
-      <h2>{project?.title}</h2>
       <SingleProject project={project} />
-      <div className="bg-blue-200">
-        <h3>Other Projects:</h3>
-        <ul>
-          {otherProjects.map(item => (
-            <li key={item.name}>{item.name}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
+       <ProjectsList projects={otherProjects} />
+    </>
   );
 };
 

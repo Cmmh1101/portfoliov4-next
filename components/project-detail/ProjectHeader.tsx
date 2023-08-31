@@ -11,7 +11,7 @@ const ProjectHeader: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top center",
-        height: "40vh"
+        height: "60vh"
       };
   return (
     <div
