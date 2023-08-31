@@ -8,11 +8,19 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-    const { darkMode, handleToggleTheme } = useTheme();
+  const { darkMode } = useTheme();
   return (
     <>
       <Navbar />
-      <main style={darkMode ? { color: "white", backgroundColor: 'black' } : { color: "black", backgroundColor: 'white' }}>{children}</main>
+      <main
+        style={
+          darkMode
+            ? { color: "white", backgroundColor: "black" }
+            : { color: "black", backgroundColor: "white" }
+        }
+      >
+        {children}
+      </main>
       <Footer />
     </>
   );
