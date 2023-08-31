@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={darkMode ? { color: "white", backgroundColor: 'black' } : { color: "black", backgroundColor: 'white' }}>
+      <main>
       <div>
       {/* <button onClick={handleToggleTheme}>
         Toggle Theme (Dark Mode: {darkMode ? 'On' : 'Off'})

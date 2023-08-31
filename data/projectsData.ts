@@ -1,7 +1,7 @@
 const projects = [
       {
       name: "little-italy-east",
-      title: "Non-Profit Organization Website",
+      title: "Restaurant Website",
       date: "06/26/2023",
       image: "/../../images/projects/little-italy.png",
       description: "This Little Italy East is a new local restaurant which needed a website to start their online presence. This website was developed with Nextjs framework, Tailwind CSS, and Typescript in it's foundation, and some external applications integrations.",
@@ -9,7 +9,7 @@ const projects = [
       featured: true,
       type: "frontend",
       technologies: 'NextJs TailwindCSS Typescript',
-      all: 'true',
+      all: true,
       customClass: 'front-visible',
       pageLink: "https://littleitalyeast.com/",
       gitHub: "https://github.com/Cmmh1101/little-pizza"
@@ -24,7 +24,7 @@ const projects = [
       featured: true,
       type: "frontend",
       technologies: 'NextJs ModularCSS Typescript',
-      all: 'true',
+      all: true,
       customClass: 'front-visible',
       pageLink: "https://hopeforthenations7.org",
       gitHub: "https://github.com/Cmmh1101/next-types-hope"
@@ -39,7 +39,7 @@ const projects = [
       featured: true,
       type: "frontend",
       technologies: 'Gatsby ReactJs GraphQl Contentful CSS Netlify',
-      all: 'true',
+      all: true,
       customClass: 'front-visible',
       pageLink: "https://my-recipes-project.netlify.app",
       gitHub: "https://github.com/Cmmh1101/recipes"
@@ -49,12 +49,12 @@ const projects = [
       title: "My Personal Blog",
       date: "06/04/2022",
       image: "/../../images/projects/blog.png",
-      description: "This is my personal blog project developed using GatsbyJs, Styled-Components, CSS, and MDX. For my blog, I decided to use MDX to write the content since it offers the hability to write react components in a markdown file. I enjoyed working on this project and learning this technologies.",
+      description: "This is my personal blog project developed using GatsbyJs, Styled-Components, CSS, and MDX. For my blog, I decided to use MDX to write the content since it offers the ability to write react components in a markdown file. I enjoyed working on this project and learning this technologies.",
       alt: "Project demo",
       featured: true,
       type: "frontend",
       technologies: 'GatsbyJs MDX Styled-Component CSS',
-      all: 'true',
+      all: true,
       customClass: 'full-visible',
       pageLink: "https://journey.carlamontano.tech",
       gitHub: "https://github.com/Cmmh1101/my-gatsby-mdx-blog",
@@ -69,7 +69,7 @@ const projects = [
       featured: false,
       type: "fullstack",
       technologies: 'ReactJs MongoDB NodeJs Express',
-      all: 'true',
+      all: true,
       customClass: 'full-visible',
       pageLink: "",
       gitHub: "https://github.com/Cmmh1101/school-stats"
@@ -84,7 +84,7 @@ const projects = [
       featured: true,
       type: "frontend",
       technologies: 'HTML CSS Reactstrap ReactJs',
-      all: 'true',
+      all: true,
       customClass: 'front-visible',
       pageLink: "https://quadruple-war-game.netlify.app",
       gitHub: "https://github.com/Cmmh1101/team-war-game"
@@ -99,7 +99,7 @@ const projects = [
       featured: true,
       type: "frontend",
       technologies: 'HTML CSS Reactstrap ReactJs',
-      all: 'true',
+      all: true,
       customClass: 'front-visible',
       pageLink: "https://the-jar-game.netlify.app",
       gitHub: "https://github.com/Cmmh1101/amanda_carla_will_aug_21"
@@ -129,7 +129,7 @@ const projects = [
       featured: false,
       type: "frontend",
       technologies: 'HTML CSS Reactstrap ReactJs',
-      all: 'true',
+      all: true,
       customClass: 'front-visible',
       pageLink: "https://law-firm-template.netlify.app",
       gitHub: "https://github.com/Cmmh1101/lawyer-template"
@@ -144,7 +144,7 @@ const projects = [
       featured: true,
       type: "cms",
       technologies: 'HTML CSS WordPress Divi',
-      all: 'true',
+      all: true,
       customClass: 'cms-visible',
       pageLink: "https://www.servinginchrist.org/",
       gitHub: ""
@@ -155,8 +155,9 @@ const projects = [
 export default projects;
 
 export function getProjectByName(name: string | string[] | undefined) {
-      return projects.find((project) => project.name === name)
+      const project = projects.find((project) => project.name === name)
+      return project
     }
-export function getAllPrograms() {
+export function getAllProjects() {
 return projects
 }
