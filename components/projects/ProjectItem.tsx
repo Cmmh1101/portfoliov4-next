@@ -8,6 +8,8 @@ interface Props {
 }
 
 const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
+  const technologies = project.technologies.trim().split(' ').filter(Boolean).join(' | ')
+
   return (
     <Link
       href={`/projects/${project?.name}`}
@@ -29,7 +31,7 @@ const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
       />
       <div className="pt-2">
         <h3 className="text-lg ">{project?.title}</h3>
-        <div>{project.technologies.trim().split(/\s+/).join(" | ")}</div>
+        <div>{technologies}</div>
       </div>
     </Link>
   );
