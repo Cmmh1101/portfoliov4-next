@@ -3,7 +3,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { SiTailwindcss, SiTypescript, SiNextdotjs, SiCssmodules, SiReact, SiGatsby, SiGraphql, SiContentful, SiMdx, SiStyledcomponents, SiMongodb, SiNodedotjs, SiExpress, SiBootstrap, SiWordpress} from "react-icons/si";
 
 const TechWithIcons: React.FC<{ technologies: string[] | undefined }> = (technologies) => {
-  const iconClasses = "text-black bg-white mx-auto mb-3 text-5xl rounded-md group-hover:rotate-45 duration-1000"
+  const iconClasses = "text-black bg-white mx-auto mb-3 text-5xl rounded-md group-hover:-rotate-45 duration-1000"
 const pClasses = "opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-1000"
   return (
     <div className="mx-3 pt-20 flex justify-evenly">{technologies?.technologies?.map((tech: string, i: number) => {

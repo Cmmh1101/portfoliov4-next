@@ -41,7 +41,7 @@ const SingleProjectPage = (props: Props) => {
     <>
       <ProjectHeader title={project.title} imageSrc={project.image} />
       <SingleProject project={project} />
-       <ProjectsList projects={otherProjects} />
+       <ProjectsList projects={otherProjects} title='Other Projects:' />
     </>
   );
 };
