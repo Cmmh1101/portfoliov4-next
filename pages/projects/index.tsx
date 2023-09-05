@@ -9,18 +9,6 @@ const Projects = () => {
   return (
     <div>
           <ProjectsList projects={projects} title="Recent Projects" />
-      {/* <ul>
-              {projects.map((project, i) => {
-                return (
-                    <Link href={`/projects/${project.name}`} key={i}>
-                      <li>
-                          - Project name: {project.name}
-                          -project title: 
-                          {project.title}</li>
-                          </Link>
-                    )
-              })}
-          </ul> */}
     </div>
   );
 };
