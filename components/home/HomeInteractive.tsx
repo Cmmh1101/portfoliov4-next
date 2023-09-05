@@ -6,13 +6,8 @@ const HomeInteractive = () => {
   const [inputName, setInputName] = useState<string>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("inputName");
-      try {
         const initialValue = saved ? JSON.parse(saved) : "";
         return initialValue;
-      } catch (error) {
-        console.error("Error parsing JSON:", error);
-        return "";
-      }
     } else {
       return "";
     }

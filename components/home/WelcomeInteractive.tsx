@@ -37,9 +37,9 @@ const MainHero: React.FC<{ inputName: string }> = ({ inputName }) => {
         <h2 className="text-6xl hero-title md:text-5xl font-bold mb-5">
           Welcome to my portfolio <br />{" "}
         </h2>
-        <span className={`${rockSalt.className} text-5xl text-blue-600 my-3`}>
+        <p className={`${rockSalt.className} text-5xl text-blue-600 my-3 -rotate-6`}>
           {inputName.toUpperCase()},
-        </span>
+        </p>
         <p className="mt-3 text-5xl">It's nice to meet you!</p>
         <p className="font-medium text-3xl mb-20">
           Here you can learn more about...
