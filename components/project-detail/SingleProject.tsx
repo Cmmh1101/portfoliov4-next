@@ -50,11 +50,11 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
       <div className="w-80 mt-20 flex justify-around mx-auto">
         <Link
           href={project?.pageLink!}
-          className="border-2 border-gray-800 p-3"
+          className="border-2 border-gray-800 p-3" target="_blank"
         >
           Live Site
         </Link>
-        <Link href={project?.gitHub!} className="border-2 border-gray-800 p-3">
+        <Link href={project?.gitHub!} className="border-2 border-gray-800 p-3" target="_blank">
           Repo
         </Link>
       </div>

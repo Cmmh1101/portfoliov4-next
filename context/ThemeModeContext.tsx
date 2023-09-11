@@ -1,4 +1,3 @@
-// ThemeContext.tsx
 import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 
 interface IThemeModeContext {
@@ -25,31 +24,24 @@ interface ThemeModeProviderProps {
 
 function ThemeModeProvider({ children }: ThemeModeProviderProps) {
   // Initialize darkMode based on localStorage if available, or use a default value
-  const [darkMode, setDarkMode] = useState(() => {
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
-      // Check if localStorage is available on the client side
       const saved = localStorage.getItem("darkMode");
-      const initialValue = JSON.parse(saved!);
-      return initialValue === null ? true : initialValue;
+      return saved ? JSON.parse(saved) : true; 
     } else {
-      // Default value when running on the server (SSR)
-      return true; // Change this to your desired server-side default
+      return true;
     }
-  });
+  }); 
 
-  // Function to toggle darkMode
   const handleToggleTheme = () => {
     setDarkMode(!darkMode);
   };
 
-  // Colors for dark and light themes
   const dark = "#15141a";
   const light = "#fbfbfe";
 
-  // Effect to update localStorage when darkMode changes
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      // Check if localStorage is available on the client side
       localStorage.setItem("darkMode", JSON.stringify(darkMode));
     }
   }, [darkMode]);

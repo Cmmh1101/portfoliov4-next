@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
       {
       name: "html",
       title: "HTML",
@@ -206,4 +206,10 @@ const skills = [
       
 ];
 
-export default skills;
+export const aboutMe = [
+      "I'm a passionate self-taught Web Developer and Designer. My proactive approach has resulted in numerous important wins in my professional development in tech, teaching, and sports.",
+      "Being able to plan, implement, supervise, evaluate, communicate, receive feedback, and correct are skills that combined with my Tech knowledge and Hispanic background give me a great base to help you grow and reach your goals.",
+      "Since my Web Developer journey started I found out that with tech I can do the things that I enjoy the most, be creative, solve problems, overcome challenges, create solutions, and the most important to help others achieve their goals.",
+    ];
+  
+

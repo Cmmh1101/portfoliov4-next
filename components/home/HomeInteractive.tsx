@@ -58,8 +58,8 @@ const HomeInteractive = () => {
             />
             <input
               type="submit"
-              className="px-5 mt-2 mx-auto py-2 text-2xl  font-semibold w-60 cursor-pointer border-t-2 border-r-2 border-b-2 border-l-2 rounded-md border-t-black border-r-black border-blue-200 opacity-75 hover:border-t-blue-200 hover:border-r-blue-200 hover:opacity-100 transition ease-in-out duration-1000 hover:border-t-2 focus:outline-none"
-              value="Let's go"
+              className="px-5 mt-2 mx-auto py-2 text-2xl font-semibold w-70 cursor-pointer border-t-2 border-r-2 border-b-2 border-l-2 rounded-md border-t-black border-r-black border-blue-200 opacity-75 hover:border-t-blue-200 hover:border-r-blue-200 hover:opacity-100 transition ease-in-out duration-1000 hover:border-t-2 focus:outline-none"
+              value="Enter name to begin"
             />
           </div>
         </form>
