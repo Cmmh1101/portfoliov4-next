@@ -1,6 +1,6 @@
 const experience = [
     {
-      name: "geenmountain",
+      name: "green-mountain",
       title: "Green Mountain | Software Engineer",
       startDate: "Oct 2021",
       endDate: "Present",
@@ -10,9 +10,21 @@ const experience = [
         "Continuous GMT customer facing software development with enterprise level features including dashboard, reports, among others. Actively participation in team and department in sprint review/demo meetings, as well whole company quarterly PI planing meetings.",
       alt: "Project demo",
       technologies: "ReactJs | Reactstrap | Sass | Typescript | C# | Express",
-    },
+  },
+  {
+    name: "parsity-bootcamp",
+    title: "Parsity Full Stack Development Bootcamp | Mentor",
+    startDate: "Mar 2021",
+    endDate: "Present",
+    location: "Remoto",
+    image: "/../../images/general/computer.jpg",
+    description:
+      "Informational web development for the non-profit Hope For The Nations. This is mainly an informational website with paypal donation integration, Facebook feed integration, display of programs, and stories of hope from their beneficiaries.",
+    alt: "Project demo",
+    technologies: "HTML | CSS | Javascript | ReactJs | Reactstrap | NodeJs | Express | Mongo",
+  },
     {
-      name: "hopeforthenations",
+      name: "hope-for-the-nations",
       title: "Hope For The Nations | Web Developer",
       startDate: "Mar 2021",
       endDate: "Present",
@@ -24,7 +36,7 @@ const experience = [
       technologies: "CSS | ReactJs | Reactstrap | Typescript",
     },
     {
-      name: "givecampmemphis",
+      name: "givecamp-memphis",
       title: "GiveCamp Memphis | Web Developer",
       startDate: "Feb 2021",
       endDate: "Present",
@@ -37,7 +49,7 @@ const experience = [
      
     },
     {
-      name: "freedomprep",
+      name: "freedom-prep",
       title: "Freedom Prep Academy | Spanish and CS Fundamentals Teacher",
       startDate: "Aug 2019",
       endDate: "Oct 2021",

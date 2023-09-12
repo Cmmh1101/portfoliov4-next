@@ -1,11 +1,12 @@
 import React from 'react'
 import Experience from '../components/experience/Experience'
 
-type Props = {}
-
-const experience = (props: Props) => {
+const experience = () => {
   return (
-    <Experience />
+    <div className="container min-h-[92vh] h-auto py-20 mx-auto">
+         <Experience />
+    </div>
+    
   )
 }
 
