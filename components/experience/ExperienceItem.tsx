@@ -20,7 +20,8 @@ const ExperienceItem: React.FC<{ experience: ExperienceItemProps }> = ({ experie
   return (
       <div>
           <div className='flex items-center'>
-              <Image src={experience?.image!} alt='' width={100} height={100} className='mr-3 rounded-md' style={{objectFit: 'cover', objectPosition: 'center', maxHeight: "100px"}} />
+              {experience?.image && <Image src={experience?.image!} alt='' width={100} height={100} className='mr-3 rounded-md' style={{objectFit: 'cover', objectPosition: 'center', maxHeight: "100px"}} />}
+              
               <h2 className='text-3xl'>{experience?.title}</h2>
           </div>
           <p className='my-3 text-xl font-semibold'> { experience?.startDate} - { experience?.endDate}</p>
