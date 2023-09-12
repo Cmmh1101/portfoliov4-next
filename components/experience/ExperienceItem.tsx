@@ -14,7 +14,7 @@ interface ExperienceItemProps {
 
 const ExperienceItem: React.FC<{experience: ExperienceItemProps}> = ({experience}) => {
   return (
-      <div>Name:{experience.name}
+      <div >Name:{experience.name}
           <p>Title:{ experience.title}</p>
       </div>
   )

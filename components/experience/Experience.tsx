@@ -30,24 +30,23 @@ const Experience = () => {
   };
 
   return (
-    <main>
+    <main className="w-full">
       <Header title="Experience" />
-      <div className="flex">
-        <div className="w-40">
+      <div className="flex w-full mt-10">
+        <div className="w-40 md:w-80 border-r-2 border-r-blue-600">
           {experience.map((item, i) => {
             return (
               <button
                 key={i}
                 onClick={() => handleExperienceClick(item.name)}
-                className="mx-3"
+                className={`w-full p-3 my-3 ${item.name === activeItem?.name ? "bg-blue-600" : ""}`}
               >
                 {item?.name.split("-").join(" ").toUpperCase()}
               </button>
             );
           })}
         </div>
-
-        <div>
+        <div className='w-full pl-5 md:pl-10'>
           <ExperienceItem experience={activeItem!} />
         </div>
       </div>
