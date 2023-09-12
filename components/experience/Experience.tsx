@@ -33,13 +33,13 @@ const Experience = () => {
     <main className="w-full">
       <Header title="Experience" />
       <div className="flex w-full mt-10">
-        <div className="w-40 md:w-80 border-r-2 border-r-blue-600">
+        <div className="w-40 ">
           {experience.map((item, i) => {
             return (
               <button
                 key={i}
                 onClick={() => handleExperienceClick(item.name)}
-                className={`w-full p-3 my-3 ${item.name === activeItem?.name ? "bg-blue-600" : ""}`}
+                className={`w-full p-3 my-3 ${item.name === activeItem?.name ? "bg-blue-600 arrow" : ""}`}
               >
                 {item?.name.split("-").join(" ").toUpperCase()}
               </button>

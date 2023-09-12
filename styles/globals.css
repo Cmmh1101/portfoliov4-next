@@ -108,6 +108,37 @@ a {
   text-decoration: none;
 }
 
+.arrow {
+  cursor: pointer;
+  display: inline-block;  
+  /* height: 40px; */
+  /* margin-left: 40px; */
+  /* margin-right: 40px; */
+  position: relative;
+  /* line-height: 2.5em; */
+  /* padding-left: 1em; */
+  /* padding-right: 2em; */
+  /* background: white; */
+  /* color: black; */
+}
+
+.arrow:after {
+  content: "";
+  height: 0;
+  width: 0;
+  top: 0;
+  border-left: 20px solid #2563EB;
+  position: absolute;
+  border-bottom: 36px solid transparent;
+  border-top: 36px solid transparent;
+  margin-right: -20px;
+  right: 0; 
+}
+
+
+
+
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
