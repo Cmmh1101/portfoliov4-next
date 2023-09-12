@@ -46,7 +46,7 @@ const Experience = () => {
             );
           })}
         </div>
-        <div className='w-full pl-5 md:pl-10'>
+        <div className='w-full pl-10'>
           <ExperienceItem experience={activeItem!} />
         </div>
       </div>

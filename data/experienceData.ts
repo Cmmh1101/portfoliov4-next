@@ -4,8 +4,8 @@ const experience = [
       title: "Green Mountain | Software Engineer",
       startDate: "Oct 2021",
       endDate: "Present",
-      location: "Remoto",
-      image: "/../../images/general/computer.jpg",
+      location: "Remote - USA",
+      image: "/images/general/computer.jpg",
       description:
         "Continuous GMT customer facing software development with enterprise level features including dashboard, reports, among others. Actively participation in team and department in sprint review/demo meetings, as well whole company quarterly PI planing meetings.",
       alt: "Project demo",
@@ -13,11 +13,11 @@ const experience = [
   },
   {
     name: "parsity-bootcamp",
-    title: "Parsity Full Stack Development Bootcamp | Mentor",
+    title: "Parsity Bootcamp | Mentor",
     startDate: "Mar 2021",
     endDate: "Present",
-    location: "Remoto",
-    image: "/../../images/general/computer.jpg",
+    location: "Remote - USA",
+    image: "/images/general/computer.jpg",
     description:
       "Informational web development for the non-profit Hope For The Nations. This is mainly an informational website with paypal donation integration, Facebook feed integration, display of programs, and stories of hope from their beneficiaries.",
     alt: "Project demo",
@@ -28,8 +28,8 @@ const experience = [
       title: "Hope For The Nations | Web Developer",
       startDate: "Mar 2021",
       endDate: "Present",
-      location: "Remoto",
-      image: "/../../images/general/computer.jpg",
+      location: "Remote - USA",
+      image: "/images/general/computer.jpg",
       description:
         "Informational web development for the non-profit Hope For The Nations. This is mainly an informational website with paypal donation integration, Facebook feed integration, display of programs, and stories of hope from their beneficiaries.",
       alt: "Project demo",
@@ -40,8 +40,8 @@ const experience = [
       title: "GiveCamp Memphis | Web Developer",
       startDate: "Feb 2021",
       endDate: "Present",
-      location: "Remoto",
-      image: "/../../images/general/computer.jpg",
+      location: "Remote - USA",
+      image: "/images/general/computer.jpg",
       description:
         "One weekend remote project done in a group where we accomplished our goal of building a functional and modern website. The main features of project were a landing page, photo gallery, intake form, booking system for sessions, and blog.",
       alt: "Project demo",
@@ -50,11 +50,11 @@ const experience = [
     },
     {
       name: "freedom-prep",
-      title: "Freedom Prep Academy | Spanish and CS Fundamentals Teacher",
+      title: "Freedom Prep Academy | Spanish and CS Teacher",
       startDate: "Aug 2019",
       endDate: "Oct 2021",
       location: "Memphis, TN",
-      image: "/../../images/projects/react-blog.png",
+      image: "/images/general/computer.jpg",
       description:
         "Continuous GMT customer facing software development with enterprise level features including dashboard, reports, among others. Actively participation in team and department in sprint review/demo meetings, as well whole company quarterly PI planing meetings.",
       alt: "Project demo",
