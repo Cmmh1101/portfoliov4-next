@@ -19,7 +19,7 @@ const projects = [
       title: "Non-Profit Organization",
       date: "08/04/2021",
       image: "/images/projects/hope.png",
-      description: "Hope For The Nations is a Non-Profit organization based in Memphis TN and Venezuela. The initial phase consist on a web application developed with Nextjs framework, modular CSS, and Typescript in it's foundation, and some external apllications integrations. Check the progress in the live version which is regularly updated and improved. This website is the new home of Hope For The Nations to continue to share their mission and hard work.",
+      description: "Hope For The Nations is a Non-Profit organization based in Memphis TN and Venezuela. The initial phase consist on a web application developed with Nextjs framework, modular CSS, and Typescript in it's foundation, and some external applications integrations. Check the progress in the live version which is regularly updated and improved. This website is the new home of Hope For The Nations to continue to share their mission and hard work.",
       alt: "Project demo",
       featured: true,
       type: "frontend",
