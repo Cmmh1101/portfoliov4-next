@@ -39,7 +39,7 @@ const Experience = () => {
               <button
                 key={i}
                 onClick={() => handleExperienceClick(item.name)}
-                className={`w-full p-3 my-3 ${item.name === activeItem?.name ? "bg-blue-600 arrow" : ""}`}
+                className={`w-full p-3 my-3 ${item.name === activeItem?.name ? "bg-blue-600 arrow text-white" : ""}`}
               >
                 {item?.name.split("-").join(" ").toUpperCase()}
               </button>
