@@ -13,10 +13,11 @@ const Layout = ({ children }: Props) => {
     <>
       <Navbar />
       <main
+        className={darkMode ? "dark-bg" : "light-bg"}
         style={
           darkMode
-            ? { color: "white", backgroundColor: "black" }
-            : { color: "black", backgroundColor: "white" }
+            ? { color: "white" }
+            : { color: "black" }
         }
       >
         {children}

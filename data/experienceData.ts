@@ -7,9 +7,9 @@ const experience = [
       location: "Remote - USA",
       image: "/images/general/computer.jpg",
       description:
-        "Continuous GMT customer facing software development with enterprise level features including dashboard, reports, among others. Actively participation in team and department in sprint review/demo meetings, as well whole company quarterly PI planing meetings.",
-      alt: "Project demo",
-      technologies: "ReactJs | Reactstrap | Sass | Typescript | C# | Express",
+        "Customer facing software development with enterprise level features including dashboard, reports, among others. Successful rewrote two of our main customer facing web application from Angular and C#, to React, Typescript, and C#, to provide a more secure user experience. Active participation in team, cross teams, and department level events. Leading sprint planning, retrospective, and standup events. Lead. Researched, troubleshoot, and fixed web applications bugs.",
+      alt: "Company Logo",
+      technologies: "ReactJs | Reactstrap | Sass | Typescript | C# | Express | Jira | Confluence | SQL | Gitkraken | Gitlab",
   },
   {
     name: "parsity-bootcamp",
@@ -19,7 +19,7 @@ const experience = [
     location: "Remote - USA",
     image: "/images/general/computer.jpg",
     description:
-      "Informational web development for the non-profit Hope For The Nations. This is mainly an informational website with paypal donation integration, Facebook feed integration, display of programs, and stories of hope from their beneficiaries.",
+      "Mentored full stack development Bootcamp students. ",
     alt: "Project demo",
     technologies: "HTML | CSS | Javascript | ReactJs | Reactstrap | NodeJs | Express | Mongo",
   },
@@ -31,9 +31,9 @@ const experience = [
       location: "Remote - USA",
       image: "/images/general/computer.jpg",
       description:
-        "Informational web development for the non-profit Hope For The Nations. This is mainly an informational website with paypal donation integration, Facebook feed integration, display of programs, and stories of hope from their beneficiaries.",
+        "Web development for the non-profit Hope For The Nations. Develop and maintain an informational website with paypal donation integration, Facebook feed integration, display of programs, and stories of hope from their beneficiaries. Communicating with the Director to gather information and plan new additions to the site.",
       alt: "Project demo",
-      technologies: "CSS | ReactJs | Reactstrap | Typescript",
+      technologies: "CSS | NextJs | Reactstrap | Typescript",
     },
     {
       name: "givecamp-memphis",
@@ -43,7 +43,7 @@ const experience = [
       location: "Remote - USA",
       image: "/images/general/computer.jpg",
       description:
-        "One weekend remote project done in a group where we accomplished our goal of building a functional and modern website. The main features of project were a landing page, photo gallery, intake form, booking system for sessions, and blog.",
+        "One weekend remote project done in a group where we accomplished our goal of building a functional and modern website. The main features of the project were a landing page, photo gallery, intake form, booking system for sessions, and blog. Yearly participation in a volunteer weekend to help local non-profits expand in their impact to the community by improving or starting their technology needs",
       alt: "Project demo",
       technologies: "WordPress | Calendly | CSS | Gravity Forms | Divi Theme",
      
@@ -56,7 +56,7 @@ const experience = [
       location: "Memphis, TN",
       image: "/images/general/computer.jpg",
       description:
-        "Continuous GMT customer facing software development with enterprise level features including dashboard, reports, among others. Actively participation in team and department in sprint review/demo meetings, as well whole company quarterly PI planing meetings.",
+        "Plan, execution, and evaluation of macro and micro planes for the classes of Spanish I, II, Heritage Spanish, and Computer science fundamentals. Participated in planning sessions, department, and whole school training and professional development.",
       alt: "Project demo",
       technologies: "PowerSchool | Schoology | Canva | Google Suite",
     },
