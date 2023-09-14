@@ -22,8 +22,8 @@ const links = [
         title: "experience"
     },
     {
-        url: "/contact",
-        title: "contact"
+        url: "/connect",
+        title: "connect"
     },
     {
         url: "/blog",
