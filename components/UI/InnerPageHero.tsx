@@ -15,7 +15,7 @@ const InnerPageHero: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
       };
   return (
     <div
-      className="container mx-auto h-60 rounded-lg mb-20"
+      className="container mx-auto h-60 rounded-lg mb-20 shadow-lg"
       style={divStyle}
     >
     </div>
