@@ -10,12 +10,11 @@ const ProjectHeader: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
         backgroundImage: `url(${headerProps.imageSrc})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "top center",
-        height: "60vh"
+        backgroundPosition: "bottom center",
       };
   return (
     <div
-      className="w-full"
+      className="container mx-auto h-60 rounded-lg pt-5"
       style={divStyle}
     >
     </div>

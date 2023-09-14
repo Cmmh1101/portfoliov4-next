@@ -38,11 +38,11 @@ const SingleProjectPage = (props: Props) => {
   const otherProjects = allProjects.filter(item => item.name !== projectName);
 
   return (
-    <>
+    <main className='pt-20'>
       <ProjectHeader title={project.title} imageSrc={project.image} />
       <SingleProject project={project} />
        <ProjectsList projects={otherProjects} title='Other Projects:' />
-    </>
+    </main>
   );
 };
 

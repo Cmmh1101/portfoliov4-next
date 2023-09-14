@@ -11,7 +11,7 @@ interface Projects {
 
 const ProjectsList: React.FC<Projects> = ({ projects, title, subTitle }) => {
   return (
-    <div className="container py-20 mx-auto">
+    <div className="container pb-20 mx-auto">
       <Header title={title} subTitle={subTitle} />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-center">
         {projects.map((project, i) => (

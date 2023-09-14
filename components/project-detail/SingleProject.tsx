@@ -9,8 +9,6 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
   const technologies = project?.technologies.trim().split(" ").filter(Boolean);
   const sentences = project?.description.split(".");
 
-  console.log(technologies);
-
   return (
     <article className="container pt-20 mx-auto">
       <h2 className="text-3xl mb-5">{project?.title}</h2>
