@@ -4,12 +4,12 @@ import { SiYoutube, SiTwitter, SiGithub} from 'react-icons/si'
 import { RiLinkedinBoxLine} from 'react-icons/ri'
 
 
-const ContactMe = () => {
+const Connect = () => {
   const iconClasses =
     "text-black bg-white mx-auto mb-3 rounded-md hover:-rotate-45 duration-1000";
   
   return (
-    <div className="flex justify-evenly items-center w-full mt-10 text-6xl">
+    <div className="flex justify-evenly items-center w-full h-full text-6xl">
         <Link href='https://www.linkedin.com/in/carla-montano/' className={iconClasses} target='_blank'><RiLinkedinBoxLine /></Link>
         <Link href='https://github.com/Cmmh1101' className={iconClasses} target='_blank'><SiGithub /></Link>
         <Link href='/' className={iconClasses} target='_blank'><SiYoutube /></Link>
@@ -18,4 +18,4 @@ const ContactMe = () => {
   )
 }
 
-export default ContactMe
+export default Connect
