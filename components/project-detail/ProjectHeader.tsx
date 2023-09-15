@@ -14,7 +14,7 @@ const ProjectHeader: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
       };
   return (
     <div
-      className="container mx-auto h-60 rounded-lg pt-5"
+      className="container mx-auto h-60 rounded-lg pt-5 shadow-lg"
       style={divStyle}
     >
     </div>
