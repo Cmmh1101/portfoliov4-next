@@ -2,6 +2,7 @@ import { Project } from "@/components/interfaces/Project";
 import Link from "next/link";
 import React from "react";
 import TechWithIcons from "./TechWithIcons";
+import ButtonLink from "../UI/ButtonLink";
 
 const SingleProject: React.FC<{ project: Project | undefined }> = ({
   project,
@@ -20,16 +21,10 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
         );
       })}
       <TechWithIcons technologies={technologies} />
-      <div className="w-80 mt-20 flex justify-around mx-auto">
-        <Link
-          href={project?.pageLink!}
-          className="border-2 border-gray-800 p-3" target="_blank"
-        >
-          Live Site
-        </Link>
-        <Link href={project?.gitHub!} className="border-2 border-gray-800 p-3" target="_blank">
-          Repo
-        </Link>
+      <div className=" mt-20 flex justify-center mx-auto mb-20">
+        <ButtonLink url={project?.pageLink!} title="Live Site" />
+        <ButtonLink url={project?.pageLink!} title="GitHub" />
+        
       </div>
     </article>
   );

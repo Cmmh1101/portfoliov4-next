@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import experience from "../../data/experienceData";
 import Header from "../UI/Header";
 import ExperienceItem from "./ExperienceItem";
+import Head from "next/head";
 
 interface ExperienceItemProps {
   name: string;
@@ -30,6 +31,11 @@ const Experience = () => {
   };
 
   return (
+    <>
+      <Head>
+        <title>Carla Montano | Experience</title>
+        <meta name="description" content="Carla Montano | Tech Experience" />
+      </Head>
     <main className="w-full">
       <Header title="Experience" />
       <div className="flex w-full mt-10">
@@ -50,7 +56,8 @@ const Experience = () => {
           <ExperienceItem experience={activeItem!} />
         </div>
       </div>
-    </main>
+      </main>
+      </>
   );
 };
 

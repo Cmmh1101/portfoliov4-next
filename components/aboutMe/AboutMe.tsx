@@ -6,7 +6,7 @@ import Header from "../UI/Header";
 
 const AboutMe = () => {
   return (
-    <section>
+    <section className="mb-5">
       <Header title="About Me" />
       <div className="flex justify-center items-center flex-col md:flex-row-reverse">
         <div className="md:w-[100%]">
@@ -18,7 +18,7 @@ const AboutMe = () => {
             className="mx-auto my-5 md:my-0"
           />
         </div>
-        <div className="my-5 md:pr-5">
+        <div className="mb-3 md:pr-5">
           {aboutMe.map((paragraph: string, i: number) => {
             console.log(paragraph[i]);
             return (

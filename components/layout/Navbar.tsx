@@ -20,10 +20,10 @@ const Navbar = () => {
     <div className="w-full container flex justify-between items-center h-20 mx-auto shadow-b-xl shadow-b-black z-20 text-3xl">
       <Link href="/" className="w-52 h-auto z-50"><Image src={logo} width={200} height={200} alt="Logo" style={{ objectFit: "cover", objectPosition: "center" }} priority /></Link>
       <NavLinks openNav={openNav} handleToggleNav={handleToggleNav} />
-      <button onClick={handleToggleTheme}>
+      <button aria-label="Aria Theme Toggle" onClick={handleToggleTheme}>
         {darkMode ? <MdLightMode /> : <MdDarkMode />}
       </button>
-      <button className="lg:hidden" onClick={handleToggleNav}>
+      <button aria-label="Aria Navbar Toggle" className="lg:hidden" onClick={handleToggleNav}>
       
         {openNav ? <AiOutlineClose /> : <RxHamburgerMenu />}
       </button>
