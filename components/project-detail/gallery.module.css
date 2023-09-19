@@ -1,0 +1,16 @@
+.imageContainer {
+  width: 200px;
+  height: 200px;
+  position: relative !important;
+}
+
+.imageContainer > div {
+  position: unset !important;
+}
+
+.image {
+  object-fit: cover;
+  width: 100% !important;
+  position: relative !important;
+}
+

@@ -1,8 +1,8 @@
 import { Project } from "@/components/interfaces/Project";
-import Link from "next/link";
 import React from "react";
 import TechWithIcons from "./TechWithIcons";
 import ButtonLink from "../UI/ButtonLink";
+import Gallery from "./Gallery";
 
 const SingleProject: React.FC<{ project: Project | undefined }> = ({
   project,
@@ -23,6 +23,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
         })}
       </div>
       <TechWithIcons technologies={technologies} />
+      <Gallery images={project?.images!} />
       <div className=" mt-10 flex justify-center mx-auto mb-20">
         <ButtonLink url={project?.pageLink!} title="Live Site" />
         <ButtonLink url={project?.pageLink!} title="GitHub" />
