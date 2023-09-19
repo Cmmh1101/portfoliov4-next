@@ -4,11 +4,12 @@ import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
 import Image from "next/image";
 import classes from "./gallery.module.css";
 import { ImageProps } from "@/components/interfaces/Project";
+import Header from "../UI/Header";
 
 const Gallery: React.FC<{images:ImageProps[]}> = ({images}) => {
 
   return (
-    <section className="flex flex-col items-center px-0 sm:px-5 md:px-28 lg:px-40 xl:px-60 py-28 bg-black">
+    <section className="flex flex-col items-center mt-10 mb-20 w-full">
       <SlideshowLightbox
         lightboxIdentifier="lightbox1"
         theme="lightbox"
@@ -20,14 +21,14 @@ const Gallery: React.FC<{images:ImageProps[]}> = ({images}) => {
         imgAnimation="fade"
       >
         {images?.map((image, i) => (
-          <div key={i} className={`overflow-hidden ${classes.imageContainer}`}>
+          <div key={i} className={`overflow-hidden rounded-full ${classes.imageContainer}`}>
             <Image
               src={image.src}
               alt={image.alt}
               fill
               data-lightboxjs="lightbox1"
               quality={80}
-              className={`shadow opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700 ${classes.image}`}
+              className={` opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700 rounded-full ${classes.image}`}
             />
           </div>
         ))}
