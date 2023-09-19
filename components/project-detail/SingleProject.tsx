@@ -13,6 +13,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
   return (
     <article className="container pt-20 mx-auto">
       <h2 className="text-3xl mb-5">{project?.title}</h2>
+      <div className="mb-20">
       {sentences?.map((paragraph, i) => {
         return (
           <p key={i} className="mb-5">
@@ -20,8 +21,9 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
           </p>
         );
       })}
+        </div>
       <TechWithIcons technologies={technologies} />
-      <div className=" mt-20 flex justify-center mx-auto mb-20">
+      <div className=" mt-10 flex justify-center mx-auto mb-20">
         <ButtonLink url={project?.pageLink!} title="Live Site" />
         <ButtonLink url={project?.pageLink!} title="GitHub" />
         
