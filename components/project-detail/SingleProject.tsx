@@ -13,7 +13,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
 
   return (
     <article className="container pt-20 mx-auto">
-      <Header subTitle={project?.title} />
+      <Header subTitle={project?.title} customClass="pb-5" />
       <div className="mb-20">
         {sentences?.map((paragraph, i) => {
           return (

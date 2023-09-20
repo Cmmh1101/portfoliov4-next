@@ -7,11 +7,12 @@ interface Projects {
   projects: Project[];
   title?: string;
   subTitle?: string;
+  customClass?: string;
 }
 
-const ProjectsList: React.FC<Projects> = ({ projects, title, subTitle }) => {
+const ProjectsList: React.FC<Projects> = ({ projects, title, subTitle, customClass }) => {
   return (
-    <div className="container pb-20 mx-auto">
+    <div className={`container pb-20 mx-auto ${customClass}`}>
       <Header title={title} subTitle={subTitle} />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-center">
         {projects.map((project, i) => (
