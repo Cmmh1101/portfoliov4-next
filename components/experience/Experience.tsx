@@ -38,7 +38,7 @@ const Experience = () => {
         {item.name.split('-').join(' ').toUpperCase()}
       </button>
     ));
-  }, [experience, activeItem]);
+  }, [activeItem]);
 
   return (
     <>
