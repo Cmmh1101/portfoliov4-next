@@ -48,9 +48,7 @@ const MainHero: React.FC<{ inputName: string }> = ({ inputName }) => {
         <div className="mt-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           {links.map((link, i) => {
             return (
-              <div key={i} className="my-5 xl:my-0 mx-5">
-                <ButtonLink title={link.title} url={link.url} internal />
-              </div>
+                <ButtonLink key={i} title={link.title} url={link.url} internal />
             );
           })}
         </div>
