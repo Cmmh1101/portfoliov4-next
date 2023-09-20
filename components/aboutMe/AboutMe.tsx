@@ -20,9 +20,8 @@ const AboutMe = () => {
         </div>
         <div className="mb-3 md:pr-5">
           {aboutMe.map((paragraph: string, i: number) => {
-            console.log(paragraph[i]);
             return (
-              <p key={i} className="mt-4">
+              <p key={i} className="mt-4 text-md md:text-lg lg:text-xl">
                 {paragraph}
               </p>
             );

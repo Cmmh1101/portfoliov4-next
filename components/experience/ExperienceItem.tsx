@@ -30,7 +30,7 @@ const ExperienceItem: React.FC<{ experience: ExperienceItemProps }> = ({ experie
           <ul>
               {descriptionArray?.map((description, i) => {
                   return (
-                      <li className='my-5' key={i}>{ description !== "" && <><SiCheckmarx className='float-left mr-2' /> {description}</>}</li>
+                      <li className='my-5 text-md md:text-lg lg:text-xl' key={i}>{ description !== "" && <><SiCheckmarx className='float-left mr-2' /> {description}</>}</li>
               )
           })}
           </ul>

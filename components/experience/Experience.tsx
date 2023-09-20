@@ -16,10 +16,6 @@ interface ExperienceItemProps {
   technologies: string;
 }
 
-interface ExperienceProps {
-  experienceData: ExperienceItemProps[];
-}
-
 const Experience = () => {
   const [activeItem, setActiveItem] = useState<ExperienceItemProps | undefined>(experience[0]);
 
@@ -54,19 +50,6 @@ const Experience = () => {
         <Header title="Experience" />
         <div className="flex w-full mt-10">
           <div className="w-40">
-            {/* {experience?.map((item, i) => (
-              <button
-                key={i}
-                onClick={() => handleExperienceClick(item.name)}
-                className={`w-full p-3 mb-5 ${
-                  item.name === activeItem?.name
-                    ? "bg-blue-600 arrow text-white"
-                    : ""
-                }`}
-              >
-                {item.name.split("-").join(" ").toUpperCase()}
-              </button>
-            ))} */}
             {buttons}
           </div>
           <div className="w-full pl-10 md:pl-20">
