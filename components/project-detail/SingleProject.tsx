@@ -29,7 +29,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
       <Gallery images={project?.images!} />
       <div className=" mt-10 flex justify-center mx-auto mb-20">
         <ButtonLink url={project?.pageLink!} title="Live Site" />
-        <ButtonLink url={project?.pageLink!} title="GitHub" />
+        <ButtonLink url={project?.gitHub!} title="GitHub" />
       </div>
     </article>
   );
