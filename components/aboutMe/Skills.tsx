@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../UI/Header";
-import TechWithIcons from "../project-detail/TechWithIcons";
+import TechWithIcons from "../utils/TechWithIcons";
 import {skills} from "@/components/data/aboutMeData"
 
 const Skills = () => {

@@ -1,6 +1,6 @@
 import { Project } from "@/components/interfaces/Project";
 import React from "react";
-import TechWithIcons from "./TechWithIcons";
+import TechWithIcons from "../utils/TechWithIcons";
 import ButtonLink from "../UI/ButtonLink";
 import Gallery from "./Gallery";
 import Header from "../UI/Header";
