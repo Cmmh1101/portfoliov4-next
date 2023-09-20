@@ -3,12 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { getAllProjects, getProjectByName } from '@/components/data/projectsData';
 import { Project } from '@/components/interfaces/Project';
 import SingleProject from '@/components/components/project-detail/SingleProject';
-import ProjectHeader from '@/components/components/project-detail/ProjectHeader';
 import ProjectsList from '@/components/components/projects/ProjectsList';
+import InnerPageHero from '@/components/components/UI/InnerPageHero';
 
-type Props = {};
-
-const SingleProjectPage = (props: Props) => {
+const SingleProjectPage = () => {
   const router = useRouter();
   const { projectName } = router.query;
   const [project, setProject] = useState<Project | undefined>();
@@ -39,7 +37,7 @@ const SingleProjectPage = (props: Props) => {
 
   return (
     <main className='pt-10'>
-      <ProjectHeader title={project.title} imageSrc={project.image} />
+      <InnerPageHero title={project.title} imageSrc={project.image} />
       <SingleProject project={project} />
        <ProjectsList projects={otherProjects} title='Other Projects:' />
     </main>

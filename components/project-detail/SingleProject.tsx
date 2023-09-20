@@ -12,7 +12,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
   const sentences = project?.description.split(".");
 
   return (
-    <article className="container pt-20 mx-auto">
+    <article className="container mx-auto">
       <Header subTitle={project?.title} customClass="pb-5" />
       <div className="mb-20">
         {sentences?.map((paragraph, i) => {
