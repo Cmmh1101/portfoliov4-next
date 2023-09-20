@@ -41,7 +41,7 @@ const MainHero: React.FC<{ inputName: string }> = ({ inputName }) => {
         <p className={`${rockSalt.className} text-5xl text-blue-600 my-3 -rotate-6`}>
           {inputName.toUpperCase()},
         </p>
-        <p className="mt-3 text-5xl">It's nice to meet you!</p>
+        <p className="mt-3 text-5xl">It&apos;s nice to meet you!</p>
         <p className="font-medium text-3xl mb-20">
           Here you can learn more about...
         </p>
