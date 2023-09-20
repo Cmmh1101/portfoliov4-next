@@ -62,4 +62,8 @@ const experience = [
     },
   ];
 
-  export default experience;
+export default experience;
+  
+export function getAllExperiences() {
+  return experience;
+}

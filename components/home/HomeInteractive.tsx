@@ -39,7 +39,7 @@ const HomeInteractive = () => {
         <form onSubmit={handleSubmit}>
           <div className="w-90 flex flex-col mx-auto text-center">
             <h1 className="text-4xl hero-title md:text-6xl font-bold mb-5">
-              Hey there, I'm Carla!
+              Hey there, I'&apos;m Carla!
             </h1>
             <p className="text-1xl mb-8">
               Software Engineer | Mom | Wife | Lifelong Learner | Latina |
