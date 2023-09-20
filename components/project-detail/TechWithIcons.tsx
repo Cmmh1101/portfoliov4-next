@@ -34,7 +34,7 @@ const TechWithIcons: React.FC<{ technologies: string[] | undefined }> = (
   technologies
 ) => {
   const iconClasses =
-    "text-black bg-white mx-auto mb-3 text-5xl rounded-md group-hover:-rotate-45 duration-1000 p-1";
+    "text-black bg-white mx-auto mb-3 text-5xl rounded-md group-hover:-rotate-45 duration-1000 p-1 hover:bg-blue-400";
   const pClasses =
     "opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-1000";
   return (
@@ -59,7 +59,7 @@ const TechWithIcons: React.FC<{ technologies: string[] | undefined }> = (
               </>
             ) : tech.toLowerCase() === "javascript" ? (
               <>
-                <SiJavascript className="text-white bg-black mx-auto mb-3 text-5xl rounded-md group-hover:-rotate-45 duration-1000" />
+                <SiJavascript className="text-white bg-black mx-auto mb-3 text-5xl rounded-md group-hover:-rotate-45 duration-1000 hover:text-blue-400" />
                 <p className={pClasses}>{tech}</p>
               </>
             ) : tech.toLowerCase() === "figma" ? (
@@ -74,7 +74,7 @@ const TechWithIcons: React.FC<{ technologies: string[] | undefined }> = (
               </>
             ) : tech.toLowerCase() === "typescript" ? (
               <>
-                <SiTypescript className="text-white bg-black mx-auto mb-3 text-5xl rounded-md group-hover:-rotate-45 duration-1000" />
+                <SiTypescript className="text-white bg-black mx-auto mb-3 text-5xl rounded-md group-hover:-rotate-45 duration-1000 hover:text-blue-400" />
                 <p className={pClasses}>{tech}</p>
               </>
             ) : tech.toLowerCase() === "git" ? (

@@ -6,7 +6,7 @@ import { RiLinkedinBoxLine} from 'react-icons/ri'
 
 const Connect = () => {
   const iconClasses =
-    "text-black bg-white mx-auto mb-3 rounded-md hover:-rotate-45 duration-1000";
+    "text-black bg-white mx-auto mb-3 rounded-md hover:bg-blue-400 hover:-rotate-45 duration-1000 p-1";
   
   return (
     <div className="flex justify-evenly items-center w-full  h-60 text-6xl">
