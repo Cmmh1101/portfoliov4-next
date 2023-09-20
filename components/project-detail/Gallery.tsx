@@ -28,6 +28,9 @@ const Gallery: React.FC<{images:ImageProps[]}> = ({images}) => {
               fill
               data-lightboxjs="lightbox1"
               quality={80}
+              placeholder="blur"
+              blurDataURL={image.src}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={` opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700 rounded-full ${classes.image}`}
             />
           </div>
