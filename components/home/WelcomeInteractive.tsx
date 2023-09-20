@@ -26,7 +26,7 @@ const links = [
     title: "My Experience",
   },
   {
-    url: "/contact",
+    url: "/connect",
     title: "Ways To Connect",
   },
 ];
@@ -48,7 +48,7 @@ const MainHero: React.FC<{ inputName: string }> = ({ inputName }) => {
         <div className="mt-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           {links.map((link, i) => {
             return (
-              <ButtonLink title={link.title} url={link.url} key={i} />
+              <ButtonLink title={link.title} url={link.url} key={i} internal />
             );
           })}
         </div>

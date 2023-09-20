@@ -24,7 +24,7 @@ const Navbar = () => {
           width={200}
           height={200}
           alt="Logo"
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          style={{ objectFit: "cover", objectPosition: "center", width: "auto", height: "auto" }}
           priority
         />
       </Link>
