@@ -1,16 +1,17 @@
 import React from "react";
 import Header from "../components/UI/Header";
 import AboutMe from "../components/aboutMe/AboutMe";
-import Skills from "../components/aboutMe/Skills"
+import Skills from "../components/aboutMe/Skills";
 import InnerPageHero from "../components/UI/InnerPageHero";
+import MainWrapper from "../components/UI/MainWrapper";
 
 const about = () => {
   return (
-    <div className="container min-h-[92vh] h-auto pt-0 pb-20 lg:py-20 mx-auto">
-           <InnerPageHero imageSrc="/images/general/bootcamp-search.jpg" />
-          <AboutMe />
-          <Skills />
-    </div>
+    <MainWrapper>
+      <InnerPageHero imageSrc="/images/general/bootcamp-search.jpg" />
+      <AboutMe />
+      <Skills />
+    </MainWrapper>
   );
 };
 
