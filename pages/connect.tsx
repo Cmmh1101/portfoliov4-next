@@ -7,7 +7,7 @@ type Props = {}
 
 const contact = (props: Props) => {
   return (
-    <div className="container min-h-[90vh] h-auto py-20 mx-auto">
+    <div className="container min-h-[90vh] h-auto pt-0 pb-20 lg:py-20 mx-auto">
       <InnerPageHero imageSrc="/images/general/connect.jpg" />
          <Header title='Ways to connect' />
           <Connect />

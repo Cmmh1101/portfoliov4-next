@@ -1,6 +1,5 @@
 import { StaticImageData } from "next/image";
 import React from "react";
-import Image from "next/image";
 
 interface HeaderProps {
   title?: string;
@@ -12,11 +11,11 @@ const InnerPageHero: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
     backgroundImage: `url(${headerProps.imageSrc})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "bottom center",
+    backgroundPosition: "center",
   };
 return (
 <div
-  className="container mx-auto h-60 rounded-lg pt-5 mb-20 shadow-lg"
+  className="lg:container w-full mx-0 md:mx-auto h-60 md:h-80  lg:rounded-lg mb-20 shadow-lg"
   style={divStyle}
 >
 </div>

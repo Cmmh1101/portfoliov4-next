@@ -6,7 +6,7 @@ import InnerPageHero from "../components/UI/InnerPageHero";
 
 const about = () => {
   return (
-    <div className="container min-h-[92vh] h-auto py-20 mx-auto">
+    <div className="container min-h-[92vh] h-auto pt-0 pb-20 lg:py-20 mx-auto">
            <InnerPageHero imageSrc="/images/general/bootcamp-search.jpg" />
           <AboutMe />
           <Skills />

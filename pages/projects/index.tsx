@@ -8,7 +8,7 @@ import InnerPageHero from "@/components/components/UI/InnerPageHero";
 const Projects = () => {
   const projects = getAllProjects();
   return (
-    <div className="pt-20">
+    <div className="pt-0 pb-20 lg:py-20">
       <InnerPageHero imageSrc="/images/general/computer-desk.jpg" />
       <ProjectsList projects={projects} title="Recent Projects" />
     </div>

@@ -35,14 +35,13 @@ const MainHero: React.FC<{ inputName: string }> = ({ inputName }) => {
   return (
     <div className="hero-text flex items-center justify-center w-full h-screen">
       <div className="container mx-auto text-center">
-        <h2 className="text-6xl hero-title md:text-5xl font-bold mb-5">
-          Welcome to my portfolio <br />{" "}
+        <h2 className="text-4xl md:text-6xl hero-title font-bold mb-5">
+          Welcome to my portfolio <br />
         </h2>
-        <p className={`${rockSalt.className} text-5xl text-blue-600 my-3 -rotate-6`}>
+        <p className={`${rockSalt.className} text-4xl md:text-6xl text-blue-600 my-5 -rotate-6`}>
           {inputName.toUpperCase()},
         </p>
-        <p className="mt-3 text-5xl">It&apos;s nice to meet you!</p>
-        <p className="font-medium text-3xl mb-20">
+        <p className="font-medium text-2xl md:text-3xl mb-10 md:mb-20">
           Here you can learn more about...
         </p>
         <div className="mt-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
