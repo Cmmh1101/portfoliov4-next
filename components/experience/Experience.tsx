@@ -17,7 +17,9 @@ interface ExperienceItemProps {
 }
 
 const Experience = () => {
-  const [activeItem, setActiveItem] = useState<ExperienceItemProps | undefined>(experience[0]);
+  const [activeItem, setActiveItem] = useState<ExperienceItemProps | undefined>(
+    experience[0]
+  );
 
   const handleExperienceClick = (name: string) => {
     const newActive: ExperienceItemProps | undefined = experience?.find(
@@ -32,10 +34,10 @@ const Experience = () => {
         key={i}
         onClick={() => handleExperienceClick(item.name)}
         className={`w-full p-3 mb-5 ${
-          item.name === activeItem?.name ? 'bg-blue-600 arrow text-white' : ''
+          item.name === activeItem?.name ? "bg-blue-600 arrow text-white" : ""
         }`}
       >
-        {item.name.split('-').join(' ').toUpperCase()}
+        {item.name.split("-").join(" ").toUpperCase()}
       </button>
     ));
   }, [activeItem]);
@@ -49,9 +51,7 @@ const Experience = () => {
       <main className="w-full">
         <Header title="Experience" />
         <div className="flex w-full mt-10">
-          <div className="w-40">
-            {buttons}
-          </div>
+          <div className="w-40">{buttons}</div>
           <div className="w-full pl-10 md:pl-20">
             {activeItem && <ExperienceItem experience={activeItem} />}
           </div>

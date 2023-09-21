@@ -1,10 +1,13 @@
-import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
-import { getAllProjects, getProjectByName } from '@/components/data/projectsData';
-import { Project } from '@/components/interfaces/Project';
-import SingleProject from '@/components/components/project-detail/SingleProject';
-import ProjectsList from '@/components/components/projects/ProjectsList';
-import InnerPageHero from '@/components/components/UI/InnerPageHero';
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import {
+  getAllProjects,
+  getProjectByName,
+} from "@/components/data/projectsData";
+import { Project } from "@/components/interfaces/Project";
+import SingleProject from "@/components/components/project-detail/SingleProject";
+import ProjectsList from "@/components/components/projects/ProjectsList";
+import InnerPageHero from "@/components/components/UI/InnerPageHero";
 
 const SingleProjectPage = () => {
   const router = useRouter();
@@ -33,13 +36,13 @@ const SingleProjectPage = () => {
   }
 
   const allProjects = getAllProjects();
-  const otherProjects = allProjects.filter(item => item.name !== projectName);
+  const otherProjects = allProjects.filter((item) => item.name !== projectName);
 
   return (
-    <main className='pt-0 pb-20 lg:py-20'>
+    <main className="pt-0 pb-20 lg:py-20">
       <InnerPageHero title={project.title} imageSrc={project.image} />
       <SingleProject project={project} />
-       <ProjectsList projects={otherProjects} title='Other Projects:' />
+      <ProjectsList projects={otherProjects} title="Other Projects:" />
     </main>
   );
 };

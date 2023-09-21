@@ -38,7 +38,9 @@ const MainHero: React.FC<{ inputName: string }> = ({ inputName }) => {
         <h2 className="text-4xl md:text-6xl hero-title font-bold mb-5">
           Welcome to my portfolio <br />
         </h2>
-        <p className={`${rockSalt.className} text-4xl md:text-6xl text-blue-600 my-5 -rotate-6`}>
+        <p
+          className={`${rockSalt.className} text-4xl md:text-6xl text-blue-600 my-5 -rotate-6`}
+        >
           {inputName.toUpperCase()},
         </p>
         <p className="font-medium text-2xl md:text-3xl mb-10 md:mb-20">
@@ -47,7 +49,7 @@ const MainHero: React.FC<{ inputName: string }> = ({ inputName }) => {
         <div className="mt-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           {links.map((link, i) => {
             return (
-                <ButtonLink key={i} title={link.title} url={link.url} internal />
+              <ButtonLink key={i} title={link.title} url={link.url} internal />
             );
           })}
         </div>

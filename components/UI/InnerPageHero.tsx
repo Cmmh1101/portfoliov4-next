@@ -13,12 +13,11 @@ const InnerPageHero: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   };
-return (
-<div
-  className="lg:container w-full mx-0 md:mx-auto h-60 md:h-80  lg:rounded-lg mb-20 shadow-lg"
-  style={divStyle}
->
-</div>
-);
+  return (
+    <div
+      className="lg:container w-full mx-0 md:mx-auto h-60 md:h-80  lg:rounded-lg mb-20 shadow-lg"
+      style={divStyle}
+    ></div>
+  );
 };
 export default InnerPageHero;
