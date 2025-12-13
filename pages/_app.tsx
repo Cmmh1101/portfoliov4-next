@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Carla Montano | Technical portfolio to showcase my experience and projects" />
       </Head>
       <ThemeModeProvider>
-      <main className={roboto.className}>
+      <main>
         <Layout>
           <Component {...pageProps} />
         </Layout>

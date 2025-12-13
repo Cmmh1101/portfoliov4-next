@@ -114,5 +114,28 @@ export const aboutMe = [
       "Being able to plan, implement, supervise, evaluate, communicate, receive feedback, and correct are skills that combined with my Tech knowledge and Hispanic background give me a great base to help you grow and reach your goals.",
       "Since my Web Developer journey started I found out that with tech I can do the things that I enjoy the most, be creative, solve problems, overcome challenges, create solutions, and the most important to help others achieve their goals.",
     ];
-  
+
+export const aboutMeSections = [
+  {
+    title: "Who I Am",
+    content: [
+      "I'm a Software Developer with a strong focus on building intuitive, scalable, and user-centered web applications. My journey began as a self-taught developer with a background in education, and over the years I’ve grown into a full-stack engineer who turns ideas into real, meaningful solutions."
+            ],
+    image: "/images/general/Carla-Montano-Profile-Photo.png"
+  },
+  {
+    title: "What I Do",
+    content: [
+      "I enjoy working across the stack, from creating polished front-end experiences to building reliable back-end logic and improving system performance. My ability to plan, communicate clearly, problem-solve, and collaborate across teams, combined with my multicultural and Hispanic background, allows me to bring clarity, creativity, and empathy to every project I work on."
+        ],
+    image: "/images/general/Carla-Montano-Profile-Photo-2.png"
+  },
+  {
+    title: "Why I Love Building Software",
+    content: [
+      "What I love most about tech is the opportunity to create: solving problems, designing better experiences, building tools that help others, and overcoming challenges with thoughtful solutions. Every project is a chance to grow, support teams, and help businesses and users achieve their goals."
+        ],
+    image: "/images/general/Carla-Montano-Profile-Photo-3.png"
+  }
+];
 

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { Rock_Salt } from "next/font/google";
 import ButtonLink from "../UI/ButtonLink";

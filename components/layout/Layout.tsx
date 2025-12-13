@@ -13,7 +13,9 @@ const Layout = ({ children }: Props) => {
     <>
       <Navbar />
       <main
-        className={darkMode ? "dark-bg" : "light-bg"}
+        className={`${
+          darkMode ? "dark-bg text-white" : "light-bg text-black"
+        } px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 py-10 transition-colors duration-300`}
         style={
           darkMode
             ? { color: "white" }

@@ -49,7 +49,6 @@ const Experience = () => {
         <meta name="description" content="Carla Montano | Tech Experience" />
       </Head>
       <main className="w-full">
-        <Header title="Experience" />
         <div className="flex w-full mt-10">
           <div className="w-40">{buttons}</div>
           <div className="w-full pl-10 md:pl-20">
