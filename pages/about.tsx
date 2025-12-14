@@ -12,7 +12,7 @@ const about = () => {
       <InnerPageHero imageSrc="/images/general/bootcamp-search.jpg" title="About Me" />
       <AboutMe />
       <Skills />
-      <FinalCTA />
+      <FinalCTA imageSrc="/images/general/Carla-Montano-Profile-Photo-4.png" />
     </MainWrapper>
   );
 };

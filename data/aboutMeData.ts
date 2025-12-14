@@ -119,21 +119,26 @@ export const aboutMeSections = [
   {
     title: "Who I Am",
     content: [
-      "I'm a Software Developer with a strong focus on building intuitive, scalable, and user-centered web applications. My journey began as a self-taught developer with a background in education, and over the years I’ve grown into a full-stack engineer who turns ideas into real, meaningful solutions."
+      "I'm a Software Developer with a strong focus on building intuitive, scalable, and user-centered web applications. My journey into tech began as a self-taught developer with a background in education, and over the years I've grown into a full-stack engineer who enjoys turning ideas into real, meaningful solutions.",
+      "I've had the opportunity to work on enterprise applications, nonprofit platforms, and business-driven projects that support users at scale. My teaching background and multicultural perspective allow me to communicate clearly, collaborate effectively, and bring empathy and structure to every team I work with. You can learn more about my roles and responsibilities on my <a href='/experience' class='underline hover:opacity-80'>experience page</a>."
             ],
+            sectionCtaLink: "/experience",
+    sectionCta: "experience page",
     image: "/images/general/Carla-Montano-Profile-Photo.png"
   },
   {
     title: "What I Do",
     content: [
-      "I enjoy working across the stack, from creating polished front-end experiences to building reliable back-end logic and improving system performance. My ability to plan, communicate clearly, problem-solve, and collaborate across teams, combined with my multicultural and Hispanic background, allows me to bring clarity, creativity, and empathy to every project I work on."
+      "I enjoy working across the stack, from creating polished front-end experiences to building reliable back-end functionality and improving system performance. I love the blend of creativity and logic that comes with designing interfaces, writing clean code, and solving technical challenges.",
+      "My work includes building dashboards, modernizing legacy applications, improving user experience, and supporting cross-functional teams during large product transitions. You can explore some of the projects I've contributed to on my <a href='/projects' class='underline hover:opacity-80'>projects page</a>."
         ],
     image: "/images/general/Carla-Montano-Profile-Photo-2.png"
   },
   {
     title: "Why I Love Building Software",
     content: [
-      "What I love most about tech is the opportunity to create: solving problems, designing better experiences, building tools that help others, and overcoming challenges with thoughtful solutions. Every project is a chance to grow, support teams, and help businesses and users achieve their goals."
+      "What I love most about software development is the opportunity to create — solving problems, designing better experiences, and building tools that help others. Every new project is a chance to think critically, learn something new, and improve the way users interact with technology.",
+      "I'm passionate about work that has real impact: tools that make processes easier, products that deliver value, and systems that grow alongside the teams that use them. I'm always excited to collaborate, contribute, and continue building solutions that make a difference."
         ],
     image: "/images/general/Carla-Montano-Profile-Photo-3.png"
   }

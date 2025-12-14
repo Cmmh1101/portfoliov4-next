@@ -38,7 +38,7 @@ const TechWithIcons: React.FC<{ technologies: string[] | undefined }> = (
   const pClasses =
     "opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-1000";
   return (
-    <div className="mx-3 flex justify-evenly flex-wrap">
+    <div className="mx-3 flex justify-center flex-wrap">
       {technologies?.technologies?.map((tech: string, i: number) => {
         return (
           <div key={i} className="w-28 my-3 text-center group">

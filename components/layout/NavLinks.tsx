@@ -35,9 +35,9 @@ const links = [
 
 const NavLinks: React.FC<{openNav: Boolean, handleToggleNav: () => void}> = ({openNav, handleToggleNav}) => {
     
-    const hideNav = openNav ? "translate-y-24" : "-translate-y-[1000px]"
+  const hideNav = openNav ? "translate-y-24" : "-translate-y-[1000px]"
   return (
-    <nav className={`flex flex-col lg:flex-row justify-around lg:justify-center py-48 lg:py-0 transform capitalize z-10 absolute -top-10 left-0 lg:top-0 lg:h-auto h-screen lg:relative lg:mx-3 text-center bg-white text-black w-full lg:translate-y-0 ${hideNav}`}>
+    <nav className={`flex flex-col lg:flex-row justify-evenly items-center lg:justify-center  lg:py-0 transform capitalize z-10 absolute -top-6 left-0 lg:top-0 lg:h-auto h-[93vh] lg:relative lg:mx-3 text-center text-white w-full lg:translate-y-0 dark:bg-[#02012e]/90 lg:bg-transparent ${hideNav}`}>
       {links.map((link, i) => {
         return (
           <Link href={link.url} key={i} className="mx-4 text-2xl lg:text-xl" target={link.title.toLowerCase() === "blog" ? "_blank" : ""} onClick={handleToggleNav}>

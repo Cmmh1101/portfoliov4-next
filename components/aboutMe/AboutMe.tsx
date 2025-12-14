@@ -23,9 +23,11 @@ const AboutMe = () => {
                 </div>
                 <div className="md:w-1/2 mb-3 md:pr-5 flex flex-col justify-center items-start">
                   <Header subTitle={content.title} />
-                  <p key={i} className="mt-4 text-md md:text-lg lg:text-xl">
-                    {content.content}
-                  </p>
+                  {content.content.map((paragraph, index) => {
+                    return (
+                      <p dangerouslySetInnerHTML={{ __html: paragraph }} key={index} className="mb-4" />
+                    )
+                  })}
                 </div>
               </div>
             </div>

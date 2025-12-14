@@ -17,12 +17,12 @@ const FinalCTA: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
   };
   return (
     <div
-      className="lg:container w-full mx-0 md:mx-auto h-60 md:h-80  lg:rounded-lg mb-20 shadow-lg flex flex-col justify-center items-center p-20 relative z-0 overflow-hidden text-center mt-10"
+      className="lg:container w-full mx-0 md:mx-auto h-60 md:h-80  lg:rounded-lg mb-20 shadow-lg flex flex-col justify-center items-center p-20 relative z-0 overflow-hidden text-center mt-10 text-white"
       style={divStyle}
     >
       <Header
         subTitle="Let's build something great together."
-        customClass="text-white z-20"
+        customClass="z-20"
       />
       <div className="absolute top-0 hero-image-overlay bg-black opacity-60" />
       <p className="mb-10">
