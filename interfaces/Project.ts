@@ -1,21 +1,36 @@
 export interface Project {
   name: string;
   title: string;
-  date: string;
-  image: string;
   description: string;
+  image: string;
   alt: string;
-  featured: boolean;
-  type: string;
   technologies: string;
-  all: boolean;
-  customClass: string;
-  pageLink: string;
-  gitHub: string;
-  images: ImageProps[] | undefined
+  status: ProjectStatus;
+  clientType: ClientType;
+  category: string;
+  problemSolved?: string;
+  clientFeedback?: string;
+  timeToBuild?: string;
+  teamSize?: string;
+  toolsUsed?: string;
+  liveLink?: string;
+  githubRepo?: string;
+  tags?: string[];
+  gallery?: ImageProps[];
+  features?: string[];
 }
   
 export interface ImageProps {
   src: string;
   alt: string;
 }
+
+export type ProjectStatus =
+  | "completed"
+  | "in progress"
+  | "archived";
+
+export type ClientType =
+  | "Client Project"
+  | "Personal Project"
+  | "Nonprofit Project";

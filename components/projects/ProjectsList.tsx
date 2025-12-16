@@ -14,7 +14,7 @@ const ProjectsList: React.FC<Projects> = ({ projects, title, subTitle, customCla
   return (
     <div className={`container pb-20 mx-auto ${customClass}`}>
       <Header title={title} subTitle={subTitle} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center">
         {projects.map((project, i) => (
           <ProjectItem key={i} project={project} />
         ))}
