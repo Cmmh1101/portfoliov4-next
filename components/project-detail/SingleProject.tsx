@@ -67,7 +67,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
               </span>
             </p>
             <p className="my-5">Project Timeframe: {project?.timeToBuild}</p>
-            <p className="my-5">Team Size: {project?.timeToBuild}</p>
+            <p className="my-5">Team Size: {project?.teamSize}</p>
           </div>
         </div>
       </div>

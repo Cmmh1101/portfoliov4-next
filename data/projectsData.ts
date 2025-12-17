@@ -343,7 +343,7 @@ export const projects: Project[] = [
     title: "Little Italy East Memphis",
     description:
       "A clean, mobile-optimized website for a local restaurant, built with Next.js and Tailwind CSS. Includes menu, map, hours, and contact form.",
-    image: "/images/projects/little-italy-east/cover.jpg",
+    image: "/images/projects/pizza/photo-1.png",
     alt: "Little Italy East Memphis Website",
     technologies: "NextJs TailwindCSS Typescript",
     status: "completed",
@@ -356,7 +356,7 @@ export const projects: Project[] = [
     teamSize: "Solo developer",
     toolsUsed: "Next.js, TailwindCSS, EmailJS, Google Maps",
     liveLink: "https://littleitalyeast.com",
-    githubRepo: "", // add repo
+    githubRepo: "https://github.com/Cmmh1101/little-pizza",
     tags: ["Client", "Restaurant", "Next.js", "TailwindCSS"],
     gallery: [
       {
@@ -403,7 +403,7 @@ export const projects: Project[] = [
     problemSolved:
       "Delivered a professional web presence for a newly opened restaurant in a busy district. Included marketing tools, newsletter signups, and SEO support to increase local traffic and engagement.",
     clientFeedback: "", // TODO: add testimonial
-    timeToBuild: "4 weeks",
+    timeToBuild: "3 weeks",
     teamSize: "Solo developer",
     toolsUsed: "WordPress, Bricks Builder, FluentCRM, RankMath, Google Maps",
     liveLink: "https://littleitalymemphis.com",
@@ -500,8 +500,10 @@ export const projects: Project[] = [
     clientType: "Nonprofit Project",
     category: "Educational Platform",
     tags: ["Client", "Education", "WordPress", "LMS"],
-    status: "completed",
-    liveLink: "https://hopeforthenations7.org",
+        status: "in progress",
+    teamSize: "Solo Developer",
+        liveLink: "https://hopeforthenations7.org",
+    githubRepo: "",
     features: [
       "WordPress site with LMS login integration",
       "Edugogo student portal at academy.schoolofhopeinternational.org",
@@ -542,7 +544,7 @@ export const projects: Project[] = [
     teamSize: "Solo developer",
     toolsUsed: "Supabase, PostgreSQL, React Native, Next.js",
     liveLink: "",
-    githubRepo: "",
+    githubRepo: "https://github.com/Cmmh1101/local-sports",
     tags: ["InProgress", "Sports", "Supabase", "Mobile", "Next.js"],
     gallery: [
       {
@@ -645,7 +647,7 @@ export const projects: Project[] = [
     title: "Moving Sale Store",
     description:
       "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
-    image: "/images/projects/moving-sale/cover.jpg",
+    image: "/images/projects/moving-sale/moving-sale-all-products.png",
     alt: "Moving Sale Web App",
     technologies: "Next.js, Airtable, Tailwind",
     status: "completed",
@@ -654,7 +656,7 @@ export const projects: Project[] = [
     problemSolved:
       "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
     clientFeedback: "",
-    timeToBuild: "3 days",
+    timeToBuild: "5 days",
     teamSize: "Solo developer",
     toolsUsed: "Next.js, Tailwind CSS, Airtable, Netlify",
     liveLink: "https://movingsale.site/",
@@ -687,7 +689,7 @@ export const projects: Project[] = [
     problemSolved:
       "Provided a fun, interactive way for students to practice and reinforce vocabulary learning, especially useful for ESL and bilingual learners.",
     clientFeedback: "",
-    timeToBuild: "2 days",
+    timeToBuild: "7 days",
     teamSize: "Developers Team",
     toolsUsed: "JavaScript, HTML, CSS",
     liveLink: "https://the-jar-game.netlify.app/homepage",
@@ -708,37 +710,37 @@ export const projects: Project[] = [
     name: "war-game",
     title: "War Card Game",
     description:
-      "Classic War card game implemented with vanilla JavaScript and dynamic UI updates.",
+      "Quadruple War Game is a creative twist on the classic War card game, built as a dynamic, interactive, browser-based game for 2 or more players. Developed during a fast-paced 7-day hackathon, the project expanded the original 1v1 format into a four-player battle arena with a real-time game board, scoreboard, and engaging card animations. Built with React.js and CSS, the application featured interactive UI logic, game state management, and a fully responsive layout deployed on Netlify. Collaboration was managed entirely through GitHub, with both developers contributing evenly to components, logic, and styling.",
     image: "/images/projects/cards/photo-1.png",
     alt: "Card Game War",
-    technologies: "JavaScript HTML CSS",
+    technologies: "React JavaScript CSS",
     status: "archived",
-    clientType: "Personal Project",
+    clientType: "Hackathon",
     category: "Game / Learning",
     problemSolved:
-      "Recreated a childhood card game to practice DOM manipulation, event handling, and game logic using only vanilla JavaScript.",
+      "We built a fully functional 2+ player card game in just 7 days, solving the challenge of real-time interactivity, game logic, and responsive UI. Using React and CSS, we delivered a polished, engaging user experience with a dynamic board and scoreboard—while collaborating effectively as junior devs using GitHub and Netlify.",
     clientFeedback: "",
-    timeToBuild: "1 day",
-    teamSize: "Developers Team",
+    timeToBuild: "7 days",
+    teamSize: "2 Devs Team",
     toolsUsed: "JavaScript, HTML, CSS",
-    liveLink: "quadruple-war-game.netlify.app",
+    liveLink: "https://quadruple-war-game.netlify.app",
     githubRepo: "https://github.com/Cmmh1101/team-war-game",
     tags: ["Teamwork", "Hackathon", "Game"],
     gallery: [
       {
-        src: "public/images/projects/cards/photo-2.png",
+        src: "/images/projects/cards/photo-2.png",
         alt: "Game Board",
       },
       {
-        src: "public/images/projects/cards/photo-3.png",
+        src: "/images/projects/cards/photo-3.png",
         alt: "Game Board",
       },
       {
-        src: "public/images/projects/cards/photo-.png",
+        src: "/images/projects/cards/photo-4.png",
         alt: "Game Rules",
       },
       {
-        src: "public/images/projects/cards/photo-6.png",
+        src: "/images/projects/cards/photo-6.png",
         alt: "Game Board",
       },
     ],
