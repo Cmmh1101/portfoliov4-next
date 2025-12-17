@@ -20,8 +20,8 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
         projectStatus={project?.status}
         projectTags={project?.tags}
       />
-      <div className="mb-20 flex justify-between items-center flex-wrap">
-        <div className="w-1/2">
+      <div className="mb-20 flex justify-center md:justify-between items-center flex-wrap">
+        <div className="w-100 md:w-1/2">
           <Header subTitle="Project Overview" />
           {sentences?.map((paragraph, i) => {
             return (
@@ -35,7 +35,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
             <p className="text-white">{project?.problemSolved}</p>
           </div>
         </div>
-        <div className="flex w-1/2 justify-end">
+        <div className="w-100 md:w-1/2 mt-8 flex justify-center md:justify-end">
           <div className="p-4 h-auto bg-gradient-to-b from-[#121c3e] via-[#1c2653] to-[#111827] rounded-lg text-white shadow-md">
             <h3 className="text-2xl">Project Details</h3>
             <p className="my-5">

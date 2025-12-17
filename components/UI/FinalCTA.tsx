@@ -26,9 +26,9 @@ const FinalCTA: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
       />
       <div className="absolute top-0 hero-image-overlay bg-black opacity-60" />
       <p className="mb-10">
-        I'm currently open to opportunities in frontend, full-stack, and web
-        application development. <br />If you'd like to discuss a role, a project, or
-        a collaboration, I'd love to hear from you.
+        I&apos;m currently open to opportunities in frontend, full-stack, and web
+        application development. <br />If you&apos;d like to discuss a role, a project, or
+        a collaboration, I&apos;d love to hear from you.
           </p>
         <ButtonLink title="Get in Touch" url="/connect" internal />
     </div>
