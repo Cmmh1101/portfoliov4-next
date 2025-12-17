@@ -407,7 +407,7 @@ export const projects: Project[] = [
     teamSize: "Solo developer",
     toolsUsed: "WordPress, Bricks Builder, FluentCRM, RankMath, Google Maps",
     liveLink: "https://littleitalymemphis.com",
-    githubRepo: "", 
+    githubRepo: "",
     tags: ["Client", "Restaurant", "WordPress", "Bricks", "CRM"],
     gallery: [
       {
@@ -433,72 +433,74 @@ export const projects: Project[] = [
     ],
   },
   {
-  name: "hope-for-the-nations",
-  title: "Hope For The Nations",
-  description:
-    "Website redesign for nonprofit organization using WordPress and Bricks. Showcases mission, events, donation options, and bilingual support.",
-  image: "/images/projects/hope-for-the-nations/cover.jpg",
-  alt: "Hope For The Nations Nonprofit Website",
-  technologies: "WordPress",
-  status: "completed",
-  clientType: "Nonprofit Project",
-  category: "Nonprofit Website",
-  problemSolved:
-    "Provided a modernized digital presence with bilingual content and donation integration to support fundraising and community engagement.",
-  clientFeedback: "", // TODO: Add a testimonial
-  timeToBuild: "3 weeks",
-  teamSize: "Solo developer",
-  toolsUsed: "WordPress, Bricks Builder, Fluent Forms, Facebook Feed Plugin",
-  liveLink: "https://hopeforthenations7.org",
-  githubRepo: "",
-  tags: ["Client", "Nonprofit", "WordPress", "SEO"],
-  gallery: [
-    {
-      src: "/images/projects/hope/photo-1.png",
-      alt: "Home page hero",
-    },
-    {
-      src: "/images/projects/hope/photo-2.png",
-      alt: "Programs display",
-    },
-    {
-      src: "/images/projects/hope/photo-3.png",
-      alt: "Banner",
-    },
-    {
-      src: "/images/projects/hope/photo-4.png",
-      alt: "Stories list display",
-    },
-    {
-      src: "/images/projects/hope/photo-5.png",
-      alt: "Banner",
-    },
-    {
-      src: "/images/projects/hope/photo-6.png",
-      alt: "Facebook feed integration",
-    },
-    {
-      src: "/images/projects/hope/photo-7.png",
-      alt: "About us page",
-    },
-    {
-      src: "/images/projects/hope/photo-8.png",
-      alt: "Program page hero",
-    },
-  ],
-},
+    name: "hope-for-the-nations",
+    title: "Hope For The Nations",
+    description:
+      "Website redesign for nonprofit organization using WordPress and Bricks. Showcases mission, events, donation options, and bilingual support.",
+    image: "/images/projects/hope-for-the-nations/cover.jpg",
+    alt: "Hope For The Nations Nonprofit Website",
+    technologies: "WordPress",
+    status: "completed",
+    clientType: "Nonprofit Project",
+    category: "Nonprofit Website",
+    problemSolved:
+      "Provided a modernized digital presence with bilingual content and donation integration to support fundraising and community engagement.",
+    clientFeedback: "", // TODO: Add a testimonial
+    timeToBuild: "3 weeks",
+    teamSize: "Solo developer",
+    toolsUsed: "WordPress, Bricks Builder, Fluent Forms, Facebook Feed Plugin",
+    liveLink: "https://hopeforthenations7.org",
+    githubRepo: "",
+    tags: ["Client", "Nonprofit", "WordPress", "SEO"],
+    gallery: [
+      {
+        src: "/images/projects/hope/photo-1.png",
+        alt: "Home page hero",
+      },
+      {
+        src: "/images/projects/hope/photo-2.png",
+        alt: "Programs display",
+      },
+      {
+        src: "/images/projects/hope/photo-3.png",
+        alt: "Banner",
+      },
+      {
+        src: "/images/projects/hope/photo-4.png",
+        alt: "Stories list display",
+      },
+      {
+        src: "/images/projects/hope/photo-5.png",
+        alt: "Banner",
+      },
+      {
+        src: "/images/projects/hope/photo-6.png",
+        alt: "Facebook feed integration",
+      },
+      {
+        src: "/images/projects/hope/photo-7.png",
+        alt: "About us page",
+      },
+      {
+        src: "/images/projects/hope/photo-8.png",
+        alt: "Program page hero",
+      },
+    ],
+  },
   {
     name: "school-of-hope",
     title: "School of Hope International",
     description:
-      "Website and academy front for a bilingual non-profit school. Built with WordPress/Bricks and integrated with Edugogo LMS backend.",
-    image: "/images/projects/school-of-hope/cover.jpg",
+              "School of Hope International is a bilingual WordPress website designed to support an online education program. The site serves as a central hub for program information, blog content, FAQs, and contact, and integrates seamlessly with the Edugogo LMS platform for course delivery, payments, and student management. The project includes branding setup, Stripe payments, email configuration, and SEO optimization.",
+    problemSolved: "Designed and developed the public-facing website for School of Hope International using WordPress, serving as the central home for the brand, programs, and communication. Seamlessly integrated the Edugogo learning platform, aligning visual branding, program structure, and user experience. Configured and customized key features such as bilingual content, payment workflows (Stripe), and SEO/OG metadata to create a cohesive digital ecosystem that supports both enrollment and student engagement.",
+    image: "/images/projects/school-of-hope/school-of-hope-about-section.png",
     alt: "School of Hope International Website",
-        technologies: "WordPress",
-        clientType: "Nonprofit Project",
+    technologies: "WordPress",
+    clientType: "Nonprofit Project",
     category: "Educational Platform",
     tags: ["Client", "Education", "WordPress", "LMS"],
     status: "completed",
+    liveLink: "https://hopeforthenations7.org",
     features: [
       "WordPress site with LMS login integration",
       "Edugogo student portal at academy.schoolofhopeinternational.org",
@@ -520,225 +522,227 @@ export const projects: Project[] = [
     ],
   },
   {
-  name: "playballtime",
-  title: "PlayBall Time",
-  description:
-    "In-progress mobile/web app for sports team management, stats, and live scoring. Built with Supabase backend, React Native, and Next.js frontend.",
-  image: "/images/projects/playballlatam/cover.jpg",
-  alt: "PlayBall Latam Sports App",
-  technologies: "nextjs Tailwindcss Reactjs PostgreSQL",
-  status: "in progress",
-  clientType: "Personal Project",
-  category: "App Development",
-  problemSolved:
-    "Modernizing how local LATAM baseball leagues manage teams, track stats, and score games in real-time.",
-  clientFeedback: "",
-  timeToBuild: "Backend and architecture (1 month), frontend and mobile (in progress)",
-  teamSize: "Solo developer",
-  toolsUsed: "Supabase, PostgreSQL, React Native, Next.js",
-  liveLink: "",
-  githubRepo: "",
-  tags: ["InProgress", "Sports", "Supabase", "Mobile", "Next.js"],
-  gallery: [
-    {
-      src: "/images/projects/play-ball-time/play-ball-time-schema.png",
-      alt: "Schema Visualizer",
-    },
-    {
-      src: "/images/projects/play-ball-time/play-ball-time-schema-2.png",
-      alt: "Schema Visualizer",
-    },
-  ],
-},
+    name: "playballtime",
+    title: "PlayBall Time",
+    description:
+      "In-progress mobile/web app for sports team management, stats, and live scoring. Built with Supabase backend, React Native, and Next.js frontend.",
+    image: "/images/projects/playballlatam/cover.jpg",
+    alt: "PlayBall Latam Sports App",
+    technologies: "nextjs Tailwindcss Reactjs PostgreSQL",
+    status: "in progress",
+    clientType: "Personal Project",
+    category: "App Development",
+    problemSolved:
+      "Modernizing how local LATAM baseball leagues manage teams, track stats, and score games in real-time.",
+    clientFeedback: "",
+    timeToBuild:
+      "Backend and architecture (1 month), frontend and mobile (in progress)",
+    teamSize: "Solo developer",
+    toolsUsed: "Supabase, PostgreSQL, React Native, Next.js",
+    liveLink: "",
+    githubRepo: "",
+    tags: ["InProgress", "Sports", "Supabase", "Mobile", "Next.js"],
+    gallery: [
+      {
+        src: "/images/projects/play-ball-time/play-ball-time-schema.png",
+        alt: "Schema Visualizer",
+      },
+      {
+        src: "/images/projects/play-ball-time/play-ball-time-schema-2.png",
+        alt: "Schema Visualizer",
+      },
+    ],
+  },
   {
-  name: "rockwall-body-and-soul",
-  title: "Rockwall Body and Soul Massage",
-  description:
-    "Custom WordPress/Bricks site with integrated Acuity scheduling, service list, and local SEO optimization for a massage therapist.",
-  image:
-    "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-about-section.png",
-  alt: "Rockwall Massage Website",
-  technologies: "WordPress, Bricks, Acuity",
-  status: "completed",
-  clientType: "Client Project",
-  category: "Website Design & Development",
-  problemSolved:
-    "Established an online presence for a solo massage therapist with integrated scheduling and service details to attract local clients.",
-  clientFeedback: "", // TODO: add feedback
-  timeToBuild: "2 weeks",
-  teamSize: "Solo developer",
-  toolsUsed: "WordPress, Bricks Builder, Acuity Scheduling, RankMath SEO",
-  liveLink: "",
-  githubRepo: "",
-  tags: ["Client", "Massage", "WordPress", "SEO"],
-  gallery: [
-    {
-      src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-about-section.png",
-      alt: "About Section",
-    },
-    {
-      src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-booking.png",
-      alt: "Booking integration",
-    },
-    {
-      src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-featured-sessions.png",
-      alt: "Featured Sessions",
-    },
-    {
-      src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-google-reviews.png",
-      alt: "Google Reviews",
-    },
-    {
-      src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-hero.png",
-      alt: "Hero Section",
-    },
-  ],
-},
+    name: "rockwall-body-and-soul",
+    title: "Rockwall Body and Soul Massage",
+    description:
+      "Custom WordPress/Bricks site with integrated Acuity scheduling, service list, and local SEO optimization for a massage therapist.",
+    image:
+      "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-about-section.png",
+    alt: "Rockwall Massage Website",
+    technologies: "WordPress, Bricks, Acuity",
+    status: "completed",
+    clientType: "Client Project",
+    category: "Website Design & Development",
+    problemSolved:
+      "Established an online presence for a solo massage therapist with integrated scheduling and service details to attract local clients.",
+    clientFeedback: "", // TODO: add feedback
+    timeToBuild: "2 weeks",
+    teamSize: "Solo developer",
+    toolsUsed: "WordPress, Bricks Builder, Acuity Scheduling, RankMath SEO",
+    liveLink: "",
+    githubRepo: "",
+    tags: ["Client", "Massage", "WordPress", "SEO"],
+    gallery: [
+      {
+        src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-about-section.png",
+        alt: "About Section",
+      },
+      {
+        src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-booking.png",
+        alt: "Booking integration",
+      },
+      {
+        src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-featured-sessions.png",
+        alt: "Featured Sessions",
+      },
+      {
+        src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-google-reviews.png",
+        alt: "Google Reviews",
+      },
+      {
+        src: "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-hero.png",
+        alt: "Hero Section",
+      },
+    ],
+  },
   {
-  name: "honor-massage-therapy",
-  title: "Honor Massage Therapy LLC",
-  description:
-    "WordPress/Bricks site with branding, Acuity, Google Business, intake forms, and more. Full launch in under 2 weeks with 5 clients booked on day 1.",
-  image: "/images/projects/honor-massage/cover.jpg",
-  alt: "Honor Massage Therapy Website",
-  technologies: "WordPress, Bricks, Acuity, Google Business",
-  status: "completed",
-  clientType: "Client Project",
-  category: "Website Design & Development",
-  problemSolved:
-    "Provided a complete digital solution for a new massage therapy business, including online presence, branding, scheduling, and SEO setup.",
-  clientFeedback: "",
-  timeToBuild: "2 weeks",
-  teamSize: "Solo developer",
-  toolsUsed: "WordPress, Bricks Builder, Acuity Scheduling, Google Workspace, Google Business Profile, Fluent Forms",
-  liveLink: "",
-  githubRepo: "",
-  tags: ["Client", "Massage", "WordPress", "Forms"],
-  gallery: [],
-},
-//   {
-//   name: "moving-sale",
-//   title: "Moving Sale Store",
-//   description:
-//     "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
-//   image: "/images/projects/moving-sale/cover.jpg",
-//   alt: "Moving Sale Web App",
-//   technologies: "Next.js, Airtable, Tailwind",
-//   status: "completed",
-//   clientType: "Personal Project",
-//   category: "E-commerce",
-//   problemSolved:
-//     "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
-//   clientFeedback: "",
-//   timeToBuild: "3 days",
-//   teamSize: "Solo developer",
-//   toolsUsed: "Next.js, Tailwind CSS, Airtable, Vercel",
-//   liveLink: "",
-//   githubRepo: "", // TODO: add repo
-//   tags: ["Personal", "Next.js", "Airtable", "Forms"],
-//   gallery: [],
-// },
+    name: "honor-massage-therapy",
+    title: "Honor Massage Therapy LLC",
+    description:
+      "WordPress/Bricks site with branding, Acuity, Google Business, intake forms, and more. Full launch in under 2 weeks with 5 clients booked on day 1.",
+    image: "/images/projects/honor-massage/cover.jpg",
+    alt: "Honor Massage Therapy Website",
+    technologies: "WordPress, Bricks, Acuity, Google Business",
+    status: "completed",
+    clientType: "Client Project",
+    category: "Website Design & Development",
+    problemSolved:
+      "Provided a complete digital solution for a new massage therapy business, including online presence, branding, scheduling, and SEO setup.",
+    clientFeedback: "",
+    timeToBuild: "2 weeks",
+    teamSize: "Solo developer",
+    toolsUsed:
+      "WordPress, Bricks Builder, Acuity Scheduling, Google Workspace, Google Business Profile, Fluent Forms",
+    liveLink: "",
+    githubRepo: "",
+    tags: ["Client", "Massage", "WordPress", "Forms"],
+    gallery: [],
+  },
+  //   {
+  //   name: "moving-sale",
+  //   title: "Moving Sale Store",
+  //   description:
+  //     "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
+  //   image: "/images/projects/moving-sale/cover.jpg",
+  //   alt: "Moving Sale Web App",
+  //   technologies: "Next.js, Airtable, Tailwind",
+  //   status: "completed",
+  //   clientType: "Personal Project",
+  //   category: "E-commerce",
+  //   problemSolved:
+  //     "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
+  //   clientFeedback: "",
+  //   timeToBuild: "3 days",
+  //   teamSize: "Solo developer",
+  //   toolsUsed: "Next.js, Tailwind CSS, Airtable, Vercel",
+  //   liveLink: "",
+  //   githubRepo: "", // TODO: add repo
+  //   tags: ["Personal", "Next.js", "Airtable", "Forms"],
+  //   gallery: [],
+  // },
   {
-  name: "language-game",
-  title: "Language Learning Game",
-  description:
-    "Interactive vocabulary matching game built with JavaScript. Designed for language learning, especially ESL/Spanish students.",
-  image: "/images/projects/language/photo-1.png",
-  alt: "Language Game",
-  technologies: "JavaScript, CSS, HTML",
-  status: "archived",
-  clientType: "Personal Project",
-  category: "Education / Game",
-  problemSolved:
-    "Provided a fun, interactive way for students to practice and reinforce vocabulary learning, especially useful for ESL and bilingual learners.",
-  clientFeedback: "",
-  timeToBuild: "2 days",
-  teamSize: "Developers Team",
-  toolsUsed: "JavaScript, HTML, CSS",
-  liveLink: "", // TODO: add link
-  githubRepo: "", // TODO: add repo
-  tags: ["Teamwork", "Hackathon", "Game", "ESL"],
-  gallery: [
-    {
-      src: "/images/projects/language/photo-4.png",
-      alt: "Game view",
-    },
-    {
-      src: "/images/projects/language/photo-7.png",
-      alt: "Game view",
-    },
-  ],
-},
+    name: "language-game",
+    title: "Language Learning Game",
+    description:
+      "Interactive vocabulary matching game built with JavaScript. Designed for language learning, especially ESL/Spanish students.",
+    image: "/images/projects/language/photo-1.png",
+    alt: "Language Game",
+    technologies: "JavaScript, CSS, HTML",
+    status: "archived",
+    clientType: "Personal Project",
+    category: "Education / Game",
+    problemSolved:
+      "Provided a fun, interactive way for students to practice and reinforce vocabulary learning, especially useful for ESL and bilingual learners.",
+    clientFeedback: "",
+    timeToBuild: "2 days",
+    teamSize: "Developers Team",
+    toolsUsed: "JavaScript, HTML, CSS",
+    liveLink: "", // TODO: add link
+    githubRepo: "", // TODO: add repo
+    tags: ["Teamwork", "Hackathon", "Game", "ESL"],
+    gallery: [
+      {
+        src: "/images/projects/language/photo-4.png",
+        alt: "Game view",
+      },
+      {
+        src: "/images/projects/language/photo-7.png",
+        alt: "Game view",
+      },
+    ],
+  },
   {
-  name: "war-game",
-  title: "War Card Game",
-  description:
-    "Classic War card game implemented with vanilla JavaScript and dynamic UI updates.",
-  image: "/images/projects/cards/photo-1.png",
-  alt: "Card Game War",
-  technologies: "JavaScript, HTML, CSS",
-  status: "archived",
-  clientType: "Personal Project",
-  category: "Game / Learning",
-  problemSolved:
-    "Recreated a childhood card game to practice DOM manipulation, event handling, and game logic using only vanilla JavaScript.",
-  clientFeedback: "",
-  timeToBuild: "1 day",
-  teamSize: "Developers Team",
-  toolsUsed: "JavaScript, HTML, CSS",
-  liveLink: "", // TODO: add link
-  githubRepo: "", // add repo
-  tags: ["Teamwork", "Hackathon", "Game"],
-  gallery: [
-    {
-      src: "public/images/projects/cards/photo-2.png",
-      alt: "Game Board",
-    },
-    {
-      src: "public/images/projects/cards/photo-3.png",
-      alt: "Game Board",
-        },
-    {
-      src: "public/images/projects/cards/photo-.png",
-      alt: "Game Rules",
-        },
-    {
-      src: "public/images/projects/cards/photo-6.png",
-      alt: "Game Board",
-    }
-  ],
-},
-//   {
-//   name: "carlamontano-io",
-//   title: "CarlaMontano.io",
-//   description:
-//     "Community-focused WordPress site in Spanish with bilingual content, blog, and links to educational resources.",
-//   image: "/images/projects/carlamontano-io/cover.jpg",
-//   alt: "Carla Montano Website",
-//   technologies: "WordPress, Bricks",
-//   status: "in progress",
-//   clientType: "Personal Project",
-//   category: "Community & Personal Branding",
-//   problemSolved:
-//     "Created a platform to share bilingual content, connect with the Spanish-speaking tech community, and host educational resources.",
-//   clientFeedback: "",
-//   timeToBuild: "In development",
-//   teamSize: "Solo developer",
-//   toolsUsed: "WordPress, Bricks Builder, Multilingual tools",
-//   liveLink: "https://carlamontano.io",
-//   githubRepo: "",
-//   tags: ["Personal", "WordPress", "Community"],
-//   gallery: [
-//     {
-//       src: "/images/projects/play-ball-time/play-ball-time-schema.png",
-//       alt: "Schema Visualizer",
-//     },
-//     {
-//       src: "/images/projects/play-ball-time/play-ball-time-schema-2.png",
-//       alt: "Schema Visualizer",
-//     },
-//   ],
-// },
+    name: "war-game",
+    title: "War Card Game",
+    description:
+      "Classic War card game implemented with vanilla JavaScript and dynamic UI updates.",
+    image: "/images/projects/cards/photo-1.png",
+    alt: "Card Game War",
+    technologies: "JavaScript, HTML, CSS",
+    status: "archived",
+    clientType: "Personal Project",
+    category: "Game / Learning",
+    problemSolved:
+      "Recreated a childhood card game to practice DOM manipulation, event handling, and game logic using only vanilla JavaScript.",
+    clientFeedback: "",
+    timeToBuild: "1 day",
+    teamSize: "Developers Team",
+    toolsUsed: "JavaScript, HTML, CSS",
+    liveLink: "", // TODO: add link
+    githubRepo: "", // add repo
+    tags: ["Teamwork", "Hackathon", "Game"],
+    gallery: [
+      {
+        src: "public/images/projects/cards/photo-2.png",
+        alt: "Game Board",
+      },
+      {
+        src: "public/images/projects/cards/photo-3.png",
+        alt: "Game Board",
+      },
+      {
+        src: "public/images/projects/cards/photo-.png",
+        alt: "Game Rules",
+      },
+      {
+        src: "public/images/projects/cards/photo-6.png",
+        alt: "Game Board",
+      },
+    ],
+  },
+  //   {
+  //   name: "carlamontano-io",
+  //   title: "CarlaMontano.io",
+  //   description:
+  //     "Community-focused WordPress site in Spanish with bilingual content, blog, and links to educational resources.",
+  //   image: "/images/projects/carlamontano-io/cover.jpg",
+  //   alt: "Carla Montano Website",
+  //   technologies: "WordPress, Bricks",
+  //   status: "in progress",
+  //   clientType: "Personal Project",
+  //   category: "Community & Personal Branding",
+  //   problemSolved:
+  //     "Created a platform to share bilingual content, connect with the Spanish-speaking tech community, and host educational resources.",
+  //   clientFeedback: "",
+  //   timeToBuild: "In development",
+  //   teamSize: "Solo developer",
+  //   toolsUsed: "WordPress, Bricks Builder, Multilingual tools",
+  //   liveLink: "https://carlamontano.io",
+  //   githubRepo: "",
+  //   tags: ["Personal", "WordPress", "Community"],
+  //   gallery: [
+  //     {
+  //       src: "/images/projects/play-ball-time/play-ball-time-schema.png",
+  //       alt: "Schema Visualizer",
+  //     },
+  //     {
+  //       src: "/images/projects/play-ball-time/play-ball-time-schema-2.png",
+  //       alt: "Schema Visualizer",
+  //     },
+  //   ],
+  // },
 ];
 
 export default projects;
