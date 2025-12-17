@@ -4,6 +4,7 @@ import TechWithIcons from "../utils/TechWithIcons";
 import ButtonLink from "../UI/ButtonLink";
 import Gallery from "./Gallery";
 import Header from "../UI/Header";
+import ProjectPageHero from "../UI/ProjectPageHero";
 
 const SingleProject: React.FC<{ project: Project | undefined }> = ({
   project,
@@ -12,8 +13,8 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
   const sentences = project?.description.split(".");
 
   return (
-    <article className="container mx-auto">
-      <Header subTitle={project?.title} customClass="pb-5" />
+    <article className="container mx-auto ">
+      <ProjectPageHero imageSrc={project?.image} title={project?.name} projectStatus={project?.status} projectTags={project?.tags} />
       <div className="mb-20">
         {sentences?.map((paragraph, i) => {
           return (
@@ -22,14 +23,28 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
             </p>
           );
         })}
+        <h3 className="text-2xl">Project Details</h3>
+        <p className="my-5">
+  Technologies:{" "}
+  {technologies?.map((tech, i) => (
+    <span key={i} className="inline-block mr-2">
+      {tech.trim()}
+      {i < technologies.length - 1 ? " |" : ""}
+    </span>
+  ))}
+</p>
+        <p className="my-5 capitalize">Project Field
+          : <span className="">{project?.category}</span></p>
+        <p className="my-5">Client Type: <span className={`${project?.clientType === "Client Project" ? "bg-blue-100 text-blue-800" : project?.clientType === "Personal Project" ? "bg-purple-100 text-purple-800" : project?.clientType === "Nonprofit Project" ? "bg-green-100 text-green-800" : "bg-pink-100 text-pink-800"} p-2 rounded-md capitalize`}>{project?.clientType}</span></p>
+        <p className="my-5">Project Timeframe: {project?.timeToBuild}</p>
+        <p className="my-5">Team Size: {project?.timeToBuild}</p>
       </div>
-      <Header subTitle="Technologies" />
-      <TechWithIcons technologies={technologies} />
+      {/* <TechWithIcons technologies={technologies} /> */}
       <Header subTitle="Quick pick:" customClass="my-10" />
-      <Gallery images={project?.images!} />
-      <div className=" mt-10 flex justify-center mx-auto mb-20">
-        <ButtonLink url={project?.pageLink!} title="Live Site" />
-        <ButtonLink url={project?.gitHub!} title="GitHub" />
+      <Gallery images={project?.gallery!} />
+      <div className="mt-10 flex justify-center mx-auto mb-20">
+        <ButtonLink url={project?.liveLink!} title="Live Site" />
+        {project?.githubRepo && project.githubRepo.trim() !== "" && <ButtonLink url={project?.githubRepo!} title="GitHub" />} 
       </div>
     </article>
   );

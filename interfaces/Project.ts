@@ -9,7 +9,7 @@ export interface Project {
   clientType: ClientType;
   category: string;
   problemSolved?: string;
-  clientFeedback?: string;
+  clientFeedback?: string | undefined;
   timeToBuild?: string;
   teamSize?: string;
   toolsUsed?: string;
@@ -33,4 +33,5 @@ export type ProjectStatus =
 export type ClientType =
   | "Client Project"
   | "Personal Project"
-  | "Nonprofit Project";
+  | "Nonprofit Project"
+  | "Hackathon";

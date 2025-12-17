@@ -3,10 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-// interface Props {
-//   project: Project;
-// }
-
 const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
   const technologies = project.technologies.trim().split(' ').filter(Boolean).join(' | ')
 
