@@ -7,7 +7,6 @@ import {
 import { Project } from "@/components/interfaces/Project";
 import SingleProject from "@/components/components/project-detail/SingleProject";
 import ProjectsList from "@/components/components/projects/ProjectsList";
-import InnerPageHero from "@/components/components/UI/InnerPageHero";
 import MainWrapper from "@/components/components/UI/MainWrapper";
 
 const SingleProjectPage = () => {
