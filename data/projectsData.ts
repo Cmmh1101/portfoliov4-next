@@ -351,12 +351,12 @@ export const projects: Project[] = [
     category: "Restaurant Website",
     problemSolved:
       "Provided a modern, responsive website for a local restaurant to increase online visibility, improve user experience on mobile, and facilitate online contact and orders.",
-    clientFeedback: "", // Optional – can add actual feedback if available
+    clientFeedback: "", // TODO: add feedback
     timeToBuild: "3 weeks",
     teamSize: "Solo developer",
     toolsUsed: "Next.js, TailwindCSS, EmailJS, Google Maps",
     liveLink: "https://littleitalyeast.com",
-    githubRepo: "", // Optional – if you want to keep it private or not available
+    githubRepo: "", // add repo
     tags: ["Client", "Restaurant", "Next.js", "TailwindCSS"],
     gallery: [
       {
@@ -402,12 +402,12 @@ export const projects: Project[] = [
     category: "Restaurant Website",
     problemSolved:
       "Delivered a professional web presence for a newly opened restaurant in a busy district. Included marketing tools, newsletter signups, and SEO support to increase local traffic and engagement.",
-    clientFeedback: "", // You can add testimonial if provided
+    clientFeedback: "", // TODO: add testimonial
     timeToBuild: "4 weeks",
     teamSize: "Solo developer",
     toolsUsed: "WordPress, Bricks Builder, FluentCRM, RankMath, Google Maps",
-    liveLink: "https://littleitalymemphis.com", // Update if the actual link differs
-    githubRepo: "", // Leave empty if private or not available
+    liveLink: "https://littleitalymemphis.com",
+    githubRepo: "", 
     tags: ["Client", "Restaurant", "WordPress", "Bricks", "CRM"],
     gallery: [
       {
@@ -445,12 +445,12 @@ export const projects: Project[] = [
   category: "Nonprofit Website",
   problemSolved:
     "Provided a modernized digital presence with bilingual content and donation integration to support fundraising and community engagement.",
-  clientFeedback: "", // Add a testimonial if available
+  clientFeedback: "", // TODO: Add a testimonial
   timeToBuild: "3 weeks",
   teamSize: "Solo developer",
   toolsUsed: "WordPress, Bricks Builder, Fluent Forms, Facebook Feed Plugin",
-  liveLink: "", // Add link if available
-  githubRepo: "", // Leave blank if private or unavailable
+  liveLink: "https://hopeforthenations7.org",
+  githubRepo: "",
   tags: ["Client", "Nonprofit", "WordPress", "SEO"],
   gallery: [
     {
@@ -564,7 +564,7 @@ export const projects: Project[] = [
   category: "Website Design & Development",
   problemSolved:
     "Established an online presence for a solo massage therapist with integrated scheduling and service details to attract local clients.",
-  clientFeedback: "",
+  clientFeedback: "", // TODO: add feedback
   timeToBuild: "2 weeks",
   teamSize: "Solo developer",
   toolsUsed: "WordPress, Bricks Builder, Acuity Scheduling, RankMath SEO",
@@ -616,34 +616,34 @@ export const projects: Project[] = [
   tags: ["Client", "Massage", "WordPress", "Forms"],
   gallery: [],
 },
-  {
-  name: "moving-sale",
-  title: "Moving Sale Store",
-  description:
-    "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
-  image: "/images/projects/moving-sale/cover.jpg",
-  alt: "Moving Sale Web App",
-  technologies: "Next.js, Airtable, Tailwind",
-  status: "completed",
-  clientType: "Personal Project",
-  category: "E-commerce",
-  problemSolved:
-    "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
-  clientFeedback: "",
-  timeToBuild: "3 days",
-  teamSize: "Solo developer",
-  toolsUsed: "Next.js, Tailwind CSS, Airtable, Vercel",
-  liveLink: "",
-  githubRepo: "",
-  tags: ["Personal", "Next.js", "Airtable", "Forms"],
-  gallery: [],
-},
+//   {
+//   name: "moving-sale",
+//   title: "Moving Sale Store",
+//   description:
+//     "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
+//   image: "/images/projects/moving-sale/cover.jpg",
+//   alt: "Moving Sale Web App",
+//   technologies: "Next.js, Airtable, Tailwind",
+//   status: "completed",
+//   clientType: "Personal Project",
+//   category: "E-commerce",
+//   problemSolved:
+//     "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
+//   clientFeedback: "",
+//   timeToBuild: "3 days",
+//   teamSize: "Solo developer",
+//   toolsUsed: "Next.js, Tailwind CSS, Airtable, Vercel",
+//   liveLink: "",
+//   githubRepo: "", // TODO: add repo
+//   tags: ["Personal", "Next.js", "Airtable", "Forms"],
+//   gallery: [],
+// },
   {
   name: "language-game",
   title: "Language Learning Game",
   description:
     "Interactive vocabulary matching game built with JavaScript. Designed for language learning, especially ESL/Spanish students.",
-  image: "/images/projects/language-game/cover.jpg",
+  image: "/images/projects/language/photo-1.png",
   alt: "Language Game",
   technologies: "JavaScript, CSS, HTML",
   status: "archived",
@@ -653,19 +653,28 @@ export const projects: Project[] = [
     "Provided a fun, interactive way for students to practice and reinforce vocabulary learning, especially useful for ESL and bilingual learners.",
   clientFeedback: "",
   timeToBuild: "2 days",
-  teamSize: "Solo developer",
+  teamSize: "Developers Team",
   toolsUsed: "JavaScript, HTML, CSS",
-  liveLink: "",
-  githubRepo: "",
-  tags: ["Personal", "Hackathon", "Game", "ESL"],
-  gallery: [],
+  liveLink: "", // TODO: add link
+  githubRepo: "", // TODO: add repo
+  tags: ["Teamwork", "Hackathon", "Game", "ESL"],
+  gallery: [
+    {
+      src: "/images/projects/language/photo-4.png",
+      alt: "Game view",
+    },
+    {
+      src: "/images/projects/language/photo-7.png",
+      alt: "Game view",
+    },
+  ],
 },
   {
   name: "war-game",
   title: "War Card Game",
   description:
     "Classic War card game implemented with vanilla JavaScript and dynamic UI updates.",
-  image: "/images/projects/war-game/cover.jpg",
+  image: "/images/projects/cards/photo-1.png",
   alt: "Card Game War",
   technologies: "JavaScript, HTML, CSS",
   status: "archived",
@@ -675,35 +684,61 @@ export const projects: Project[] = [
     "Recreated a childhood card game to practice DOM manipulation, event handling, and game logic using only vanilla JavaScript.",
   clientFeedback: "",
   timeToBuild: "1 day",
-  teamSize: "Solo developer",
+  teamSize: "Developers Team",
   toolsUsed: "JavaScript, HTML, CSS",
-  liveLink: "",
-  githubRepo: "",
-  tags: ["Personal", "Hackathon", "Game"],
-  gallery: [],
+  liveLink: "", // TODO: add link
+  githubRepo: "", // add repo
+  tags: ["Teamwork", "Hackathon", "Game"],
+  gallery: [
+    {
+      src: "public/images/projects/cards/photo-2.png",
+      alt: "Game Board",
+    },
+    {
+      src: "public/images/projects/cards/photo-3.png",
+      alt: "Game Board",
+        },
+    {
+      src: "public/images/projects/cards/photo-.png",
+      alt: "Game Rules",
+        },
+    {
+      src: "public/images/projects/cards/photo-6.png",
+      alt: "Game Board",
+    }
+  ],
 },
-  {
-  name: "carlamontano-io",
-  title: "CarlaMontano.io",
-  description:
-    "Community-focused WordPress site in Spanish with bilingual content, blog, and links to educational resources.",
-  image: "/images/projects/carlamontano-io/cover.jpg",
-  alt: "Carla Montano Website",
-  technologies: "WordPress, Bricks",
-  status: "in progress",
-  clientType: "Personal Project",
-  category: "Community & Personal Branding",
-  problemSolved:
-    "Created a platform to share bilingual content, connect with the Spanish-speaking tech community, and host educational resources.",
-  clientFeedback: "",
-  timeToBuild: "In development",
-  teamSize: "Solo developer",
-  toolsUsed: "WordPress, Bricks Builder, Multilingual tools",
-  liveLink: "",
-  githubRepo: "",
-  tags: ["Personal", "WordPress", "Community"],
-  gallery: [],
-},
+//   {
+//   name: "carlamontano-io",
+//   title: "CarlaMontano.io",
+//   description:
+//     "Community-focused WordPress site in Spanish with bilingual content, blog, and links to educational resources.",
+//   image: "/images/projects/carlamontano-io/cover.jpg",
+//   alt: "Carla Montano Website",
+//   technologies: "WordPress, Bricks",
+//   status: "in progress",
+//   clientType: "Personal Project",
+//   category: "Community & Personal Branding",
+//   problemSolved:
+//     "Created a platform to share bilingual content, connect with the Spanish-speaking tech community, and host educational resources.",
+//   clientFeedback: "",
+//   timeToBuild: "In development",
+//   teamSize: "Solo developer",
+//   toolsUsed: "WordPress, Bricks Builder, Multilingual tools",
+//   liveLink: "https://carlamontano.io",
+//   githubRepo: "",
+//   tags: ["Personal", "WordPress", "Community"],
+//   gallery: [
+//     {
+//       src: "/images/projects/play-ball-time/play-ball-time-schema.png",
+//       alt: "Schema Visualizer",
+//     },
+//     {
+//       src: "/images/projects/play-ball-time/play-ball-time-schema-2.png",
+//       alt: "Schema Visualizer",
+//     },
+//   ],
+// },
 ];
 
 export default projects;
