@@ -638,31 +638,41 @@ export const projects: Project[] = [
         src: "/images/projects/honor-massage-therapy/honor-massage-therapy-sessions.png",
         alt: "Sessions section",
       },
-      ,
     ],
   },
-  //   {
-  //   name: "moving-sale",
-  //   title: "Moving Sale Store",
-  //   description:
-  //     "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
-  //   image: "/images/projects/moving-sale/cover.jpg",
-  //   alt: "Moving Sale Web App",
-  //   technologies: "Next.js, Airtable, Tailwind",
-  //   status: "completed",
-  //   clientType: "Personal Project",
-  //   category: "E-commerce",
-  //   problemSolved:
-  //     "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
-  //   clientFeedback: "",
-  //   timeToBuild: "3 days",
-  //   teamSize: "Solo developer",
-  //   toolsUsed: "Next.js, Tailwind CSS, Airtable, Vercel",
-  //   liveLink: "",
-  //   githubRepo: "", // TODO: add repo
-  //   tags: ["Personal", "Next.js", "Airtable", "Forms"],
-  //   gallery: [],
-  // },
+    {
+    name: "moving-sale",
+    title: "Moving Sale Store",
+    description:
+      "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
+    image: "/images/projects/moving-sale/cover.jpg",
+    alt: "Moving Sale Web App",
+    technologies: "Next.js, Airtable, Tailwind",
+    status: "completed",
+    clientType: "Personal Project",
+    category: "E-commerce",
+    problemSolved:
+      "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
+    clientFeedback: "",
+    timeToBuild: "3 days",
+    teamSize: "Solo developer",
+    toolsUsed: "Next.js, Tailwind CSS, Airtable, Netlify",
+    liveLink: "https://movingsale.site/",
+    githubRepo: "https://github.com/Cmmh1101/my-airtable-sale-app",
+    tags: ["Personal", "Next.js", "Airtable", "Forms"],
+    gallery: [{
+        src: "/images/projects/moving-sale/moving-sale-all-products.png",
+        alt: "Homepage product gallery",
+      },
+      {
+        src: "/images/projects/moving-sale/moving-sale-filtering.png",
+        alt: "Products filtering",
+      },{
+        src: "/images/projects/moving-sale/moving-sale-product-page.png",
+        alt: "Single Product Page",
+      },
+      ],
+  },
   {
     name: "language-game",
     title: "Language Learning Game",
@@ -670,7 +680,7 @@ export const projects: Project[] = [
       "Interactive vocabulary matching game built with JavaScript. Designed for language learning, especially ESL/Spanish students.",
     image: "/images/projects/language/photo-1.png",
     alt: "Language Game",
-    technologies: "JavaScript, CSS, HTML",
+    technologies: "JavaScript CSS HTML",
     status: "archived",
     clientType: "Personal Project",
     category: "Education / Game",
@@ -680,8 +690,8 @@ export const projects: Project[] = [
     timeToBuild: "2 days",
     teamSize: "Developers Team",
     toolsUsed: "JavaScript, HTML, CSS",
-    liveLink: "", // TODO: add link
-    githubRepo: "", // TODO: add repo
+    liveLink: "https://the-jar-game.netlify.app/homepage",
+    githubRepo: "https://github.com/Cmmh1101/amanda_carla_will_aug_21",
     tags: ["Teamwork", "Hackathon", "Game", "ESL"],
     gallery: [
       {
@@ -701,7 +711,7 @@ export const projects: Project[] = [
       "Classic War card game implemented with vanilla JavaScript and dynamic UI updates.",
     image: "/images/projects/cards/photo-1.png",
     alt: "Card Game War",
-    technologies: "JavaScript, HTML, CSS",
+    technologies: "JavaScript HTML CSS",
     status: "archived",
     clientType: "Personal Project",
     category: "Game / Learning",
@@ -711,8 +721,8 @@ export const projects: Project[] = [
     timeToBuild: "1 day",
     teamSize: "Developers Team",
     toolsUsed: "JavaScript, HTML, CSS",
-    liveLink: "", // TODO: add link
-    githubRepo: "", // add repo
+    liveLink: "quadruple-war-game.netlify.app",
+    githubRepo: "https://github.com/Cmmh1101/team-war-game",
     tags: ["Teamwork", "Hackathon", "Game"],
     gallery: [
       {
