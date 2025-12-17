@@ -1,6 +1,4 @@
 import Head from "next/head";
-// import styles from "@/components/styles/Home.module.css";
-import HomeComponent from "../components/home/HomeComponent";
 import HomeInteractive from "../components/home/HomeInteractive";
 
 export default function Home() {

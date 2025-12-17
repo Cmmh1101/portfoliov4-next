@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/UI/Header";
 import AboutMe from "../components/aboutMe/AboutMe";
 import Skills from "../components/aboutMe/Skills";
 import InnerPageHero from "../components/UI/InnerPageHero";
