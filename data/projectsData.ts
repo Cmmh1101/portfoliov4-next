@@ -396,7 +396,7 @@ export const projects: Project[] = [
       "A responsive and SEO-optimized WordPress website for a restaurant in Midtown Memphis. Built using Bricks Builder and customized to include a blog, integrated CRM, and contact forms for customer engagement.",
     image: "/images/projects/pizza-midtown/little-italy-memphis-menu.png",
     alt: "Little Italy Memphis WordPress Site",
-    technologies: "WordPress Google Maps",
+    technologies: "WordPress GoogleMaps",
     status: "completed",
     clientType: "Client Project",
     category: "Restaurant Website",
@@ -437,9 +437,9 @@ export const projects: Project[] = [
     title: "Hope For The Nations",
     description:
       "Website redesign for nonprofit organization using WordPress and Bricks. Showcases mission, events, donation options, and bilingual support.",
-    image: "/images/projects/hope-for-the-nations/cover.jpg",
+    image: "/images/projects/hope/hope-for-the-nations-hero.png",
     alt: "Hope For The Nations Nonprofit Website",
-    technologies: "WordPress",
+    technologies: "WordPress Paypal Facebook CRM AnalyticsWP",
     status: "completed",
     clientType: "Nonprofit Project",
     category: "Nonprofit Website",
@@ -454,16 +454,16 @@ export const projects: Project[] = [
     tags: ["Client", "Nonprofit", "WordPress", "SEO"],
     gallery: [
       {
-        src: "/images/projects/hope/photo-1.png",
-        alt: "Home page hero",
+        src: "/images/projects/hope/hope-for-the-nations-contact.png",
+        alt: "Contact page",
       },
       {
-        src: "/images/projects/hope/photo-2.png",
-        alt: "Programs display",
+        src: "/images/projects/hope/hope-for-the-nations-hero.png",
+        alt: "Homepage hero",
       },
       {
-        src: "/images/projects/hope/photo-3.png",
-        alt: "Banner",
+        src: "/images/projects/hope/hope-for-the-nations-programs.png",
+        alt: "Programs",
       },
       {
         src: "/images/projects/hope/photo-4.png",
@@ -491,11 +491,12 @@ export const projects: Project[] = [
     name: "school-of-hope",
     title: "School of Hope International",
     description:
-              "School of Hope International is a bilingual WordPress website designed to support an online education program. The site serves as a central hub for program information, blog content, FAQs, and contact, and integrates seamlessly with the Edugogo LMS platform for course delivery, payments, and student management. The project includes branding setup, Stripe payments, email configuration, and SEO optimization.",
-    problemSolved: "Designed and developed the public-facing website for School of Hope International using WordPress, serving as the central home for the brand, programs, and communication. Seamlessly integrated the Edugogo learning platform, aligning visual branding, program structure, and user experience. Configured and customized key features such as bilingual content, payment workflows (Stripe), and SEO/OG metadata to create a cohesive digital ecosystem that supports both enrollment and student engagement.",
+      "School of Hope International is a bilingual WordPress website designed to support an online education program. The site serves as a central hub for program information, blog content, FAQs, and contact, and integrates seamlessly with the Edugogo LMS platform for course delivery, payments, and student management. The project includes branding setup, Stripe payments, email configuration, and SEO optimization.",
+    problemSolved:
+      "Designed and developed the public-facing website for School of Hope International using WordPress, serving as the central home for the brand, programs, and communication. Seamlessly integrated the Edugogo learning platform, aligning visual branding, program structure, and user experience. Configured and customized key features such as bilingual content, payment workflows (Stripe), and SEO/OG metadata to create a cohesive digital ecosystem that supports both enrollment and student engagement.",
     image: "/images/projects/school-of-hope/school-of-hope-about-section.png",
     alt: "School of Hope International Website",
-    technologies: "WordPress",
+    technologies: "WordPress Stripe Edugogo LMS",
     clientType: "Nonprofit Project",
     category: "Educational Platform",
     tags: ["Client", "Education", "WordPress", "LMS"],
@@ -526,14 +527,15 @@ export const projects: Project[] = [
     title: "PlayBall Time",
     description:
       "In-progress mobile/web app for sports team management, stats, and live scoring. Built with Supabase backend, React Native, and Next.js frontend.",
-    image: "/images/projects/playballlatam/cover.jpg",
-    alt: "PlayBall Latam Sports App",
-    technologies: "nextjs Tailwindcss Reactjs PostgreSQL",
+    image: "/images/projects/play-ball-time/play-ball-schema-2.png",
+    alt: "PlayBall Time Database schema visualizer",
+    technologies:
+      "Nextjs Tailwindcss React Native Express PostgreSQL GoogleAnalytics",
     status: "in progress",
     clientType: "Personal Project",
     category: "App Development",
     problemSolved:
-      "Modernizing how local LATAM baseball leagues manage teams, track stats, and score games in real-time.",
+      "Modernizing how local LATAM baseball leagues manage teams, track stats, and score games in real-time with a bilingual platform, user friendly, with a offline scoring capabilities.",
     clientFeedback: "",
     timeToBuild:
       "Backend and architecture (1 month), frontend and mobile (in progress)",
@@ -561,7 +563,7 @@ export const projects: Project[] = [
     image:
       "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-about-section.png",
     alt: "Rockwall Massage Website",
-    technologies: "WordPress, Bricks, Acuity",
+    technologies: "WordPress Bricks Acuity SquareSpace AnalyticsWP",
     status: "completed",
     clientType: "Client Project",
     category: "Website Design & Development",
@@ -602,9 +604,10 @@ export const projects: Project[] = [
     title: "Honor Massage Therapy LLC",
     description:
       "WordPress/Bricks site with branding, Acuity, Google Business, intake forms, and more. Full launch in under 2 weeks with 5 clients booked on day 1.",
-    image: "/images/projects/honor-massage/cover.jpg",
+    image:
+      "/images/projects/honor-massage-therapy/honor-massage-therapy-add-ons.png",
     alt: "Honor Massage Therapy Website",
-    technologies: "WordPress, Bricks, Acuity, Google Business",
+    technologies: "WordPress Bricks Acuity GoogleBusiness AnalyticsWP",
     status: "completed",
     clientType: "Client Project",
     category: "Website Design & Development",
@@ -618,7 +621,25 @@ export const projects: Project[] = [
     liveLink: "",
     githubRepo: "",
     tags: ["Client", "Massage", "WordPress", "Forms"],
-    gallery: [],
+    gallery: [
+      {
+        src: "/images/projects/honor-massage-therapy/honor-massage-therapy-add-ons.png",
+        alt: "Add-ons Section",
+      },
+      {
+        src: "/images/projects/honor-massage-therapy/honor-massage-therapy-homepage.png",
+        alt: "Homepage",
+      },
+      {
+        src: "/images/projects/honor-massage-therapy/honor-massage-therapy-reviews.png",
+        alt: "Google Reviews section",
+      },
+      {
+        src: "/images/projects/honor-massage-therapy/honor-massage-therapy-sessions.png",
+        alt: "Sessions section",
+      },
+      ,
+    ],
   },
   //   {
   //   name: "moving-sale",
