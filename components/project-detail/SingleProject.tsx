@@ -6,7 +6,6 @@ import Gallery from "./Gallery";
 import Header from "../UI/Header";
 import ProjectPageHero from "../UI/ProjectPageHero";
 import Link from "next/link";
-import { IoIosArrowBack } from "react-icons/io";
 
 const SingleProject: React.FC<{ project: Project | undefined }> = ({
   project,
