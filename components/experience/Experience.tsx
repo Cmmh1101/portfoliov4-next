@@ -51,7 +51,7 @@ const Experience = () => {
       </Head>
       <main className="w-full">
         <div className="flex flex-col md:flex-row w-full mt-5">
-          <div className="w-100 md:w-60 flex flex-wrap flex-row md:flex-col justify-around">{buttons}</div>
+          <div className="w-100 md:w-60 flex flex-wrap flex-row md:flex-col justify-around md:justify-start">{buttons}</div>
           <div className="w-full pl-10 md:pl-20">
             {activeItem && <ExperienceItem experience={activeItem} />}
           </div>

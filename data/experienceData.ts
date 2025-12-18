@@ -9,7 +9,7 @@ const experience = [
       description:
         "Founded and operate a digital agency building modern websites and custom tech solutions for small businesses and nonprofits. Designed and developed WordPress and React-based web platforms with SEO optimization, Stripe integration, Airtable and Zapier automations. Delivered complete solutions including UI/UX design, performance optimization, branding, and content strategy. Built and launched School of Hope International, seamlessly integrating a custom WordPress frontend with the Edugogo platform for bilingual virtual learning. Currently developing a tech education platform and community under The Carla Montano & Tu Camino Tech brand.",
       alt: "In Motion Web Solutions Logo",
-      technologies: "HTML | CSS | NextJs | React Native | Reactstrap | Bootstrap | Typescript | Express | SQL | Wordpress | Airtable | Zapier | Google Suite | Analytics | Supabase",
+      technologies: "HTML | CSS | NextJs | React Native | Reactstrap | Typescript | Express | SQL | Wordpress | Airtable | Zapier | Google Suite | Analytics | Supabase",
     },
       {
     name: "green-mountain-technology",

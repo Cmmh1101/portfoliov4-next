@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../UI/Header";
 import { SiCheckmarx } from "react-icons/si";
 import Image from "next/image";
 
@@ -25,10 +24,10 @@ const ExperienceItem: React.FC<{ experience: ExperienceItemProps }> = ({
         {experience?.image && (
           <Image
             src={experience?.image!}
-            alt=""
-            width={100}
-            height={100}
-            className="mr-3 rounded-md block"
+            alt="Company Logo"
+            width={120}
+            height={120}
+            className="mr-3 rounded-md bg-[#010024] block p-3"
             style={{
               objectFit: "cover",
               objectPosition: "center",

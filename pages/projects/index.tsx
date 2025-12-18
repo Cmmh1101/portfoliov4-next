@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = getAllProjects();
   return (
     <MainWrapper>
-      <InnerPageHero title="Resent Projects" imageSrc="/images/general/computer-desk.jpg" />
+      <InnerPageHero title="Recent Projects" imageSrc="/images/general/computer-desk.jpg" />
       <ProjectsList projects={projects} />
     </MainWrapper>
   );

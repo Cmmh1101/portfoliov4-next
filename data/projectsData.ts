@@ -342,7 +342,7 @@ export const projects: Project[] = [
     name: "little-italy-east",
     title: "Little Italy East Memphis",
     description:
-      "A clean, mobile-optimized website for a local restaurant, built with Next.js and Tailwind CSS. Includes menu, map, hours, and contact form.",
+      "I designed and developed a custom marketing website for Little Italy East Memphis, a local restaurant looking to establish a stronger digital presence. The site features a clean, mobile-first design with integrated business branding, clear calls to action, and smooth page transitions. A fully responsive UI built with Nextjs and Tailwind CSS, Dynamic menu pages, contact form, and image galleries, Optimized performance and SEO with meta tags and Open Graph integration, Integration with Google Business Profile for reviews and location, Hosted and deployed using Netlify",
     image: "/images/projects/pizza/photo-1.png",
     alt: "Little Italy East Memphis Website",
     technologies: "NextJs TailwindCSS Typescript",
@@ -350,7 +350,7 @@ export const projects: Project[] = [
     clientType: "Client Project",
     category: "Restaurant Website",
     problemSolved:
-      "Provided a modern, responsive website for a local restaurant to increase online visibility, improve user experience on mobile, and facilitate online contact and orders.",
+      "The business had no prior website and relied solely on Facebook and word-of-mouth. I provided a professional, modern web presence that improved their credibility, discoverability, and customer engagement—resulting in increased online inquiries and positive local reach.",
     clientFeedback: "", // TODO: add feedback
     timeToBuild: "3 weeks",
     teamSize: "Solo developer",
@@ -393,7 +393,7 @@ export const projects: Project[] = [
     name: "little-italy-memphis",
     title: "Little Italy Memphis",
     description:
-      "A responsive and SEO-optimized WordPress website for a restaurant in Midtown Memphis. Built using Bricks Builder and customized to include a blog, integrated CRM, and contact forms for customer engagement.",
+      "A clean and modern WordPress website built for the reopening of Little Italy East Memphis, designed to reflect the restaurant's heritage and refreshed brand identity. The site includes menu pages optimized for SEO, an embedded contact form, newsletter sign-up, Google Reviews integration, and Google Maps. External third-party ordering platforms were seamlessly integrated to enable online orders and delivery.",
     image: "/images/projects/pizza-midtown/little-italy-memphis-menu.png",
     alt: "Little Italy Memphis WordPress Site",
     technologies: "WordPress GoogleMaps",
@@ -401,7 +401,7 @@ export const projects: Project[] = [
     clientType: "Client Project",
     category: "Restaurant Website",
     problemSolved:
-      "Delivered a professional web presence for a newly opened restaurant in a busy district. Included marketing tools, newsletter signups, and SEO support to increase local traffic and engagement.",
+      "Enabled a fast and effective digital relaunch for a local restaurant reopening, improving online visibility with local SEO, streamlining online ordering through third-party platforms, and making essential business info and customer reviews easily accessible.",
     clientFeedback: "", // TODO: add testimonial
     timeToBuild: "3 weeks",
     teamSize: "Solo developer",
@@ -436,7 +436,7 @@ export const projects: Project[] = [
     name: "hope-for-the-nations",
     title: "Hope For The Nations",
     description:
-      "Website redesign for nonprofit organization using WordPress and Bricks. Showcases mission, events, donation options, and bilingual support.",
+      "Led the redesign and digital transformation of the website for Hope for the Nations, a US-based nonprofit focused on education and social impact. The project involved creating, mobile-responsive site that highlights the organization's mission, success stories, donation campaigns, and educational programs such as the School of Hope. Integrated CRM (FluentCRM) for streamlined donor and subscriber communications, and embedded SEO tools to improve discoverability.",
     image: "/images/projects/hope/hope-for-the-nations-hero.png",
     alt: "Hope For The Nations Nonprofit Website",
     technologies: "WordPress Paypal Facebook CRM AnalyticsWP",
@@ -444,9 +444,9 @@ export const projects: Project[] = [
     clientType: "Nonprofit Project",
     category: "Nonprofit Website",
     problemSolved:
-      "Provided a modernized digital presence with bilingual content and donation integration to support fundraising and community engagement.",
+      "The original site lacked clarity, user engagement, and content strategy. It did not reflect the scope of the nonprofit's work or support its growth goals. By redesigning the user experience and implementing a structured content system, I enabled the organization to: Better communicate its mission and impact, collect donations effectively through integrated call-to-actions, Increase email subscribers, Improve visibility through SEO, and Promote School of Hope and redirect interested users via compelling CTAs",
     clientFeedback: "", // TODO: Add a testimonial
-    timeToBuild: "3 weeks",
+    timeToBuild: "4 weeks",
     teamSize: "Solo developer",
     toolsUsed: "WordPress, Bricks Builder, Fluent Forms, Facebook Feed Plugin",
     liveLink: "https://hopeforthenations7.org",
@@ -528,7 +528,7 @@ export const projects: Project[] = [
     name: "playballtime",
     title: "PlayBall Time",
     description:
-      "In-progress mobile/web app for sports team management, stats, and live scoring. Built with Supabase backend, React Native, and Next.js frontend.",
+      "An interactive MVP web app built with React, Redux Toolkit, Supabase, and Expo Go, designed to streamline communication and operations for amateur baseball teams in Venezuela. The app includes features for game schedules, roster management, parent and fan access, and a mobile-friendly UI. The app integrates with Supabase for real-time data and authentication, RevenueCat for subscription handling, and Stripe for payments. Development in process using GitHub Projects and GitHub Actions for CI/CD workflows.",
     image: "/images/projects/play-ball-time/play-ball-schema-2.png",
     alt: "PlayBall Time Database schema visualizer",
     technologies:
@@ -537,7 +537,7 @@ export const projects: Project[] = [
     clientType: "Personal Project",
     category: "App Development",
     problemSolved:
-      "Modernizing how local LATAM baseball leagues manage teams, track stats, and score games in real-time with a bilingual platform, user friendly, with a offline scoring capabilities.",
+      "Provided an all-in-one platform to simplify team coordination, player management, and fan engagement for community baseball leagues in Venezuela. Bridged the gap between paper-based processes and digital convenience, improving communication and game-day operations for players, parents, and fans.",
     clientFeedback: "",
     timeToBuild:
       "Backend and architecture (1 month), frontend and mobile (in progress)",
