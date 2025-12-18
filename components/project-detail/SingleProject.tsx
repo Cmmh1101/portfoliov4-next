@@ -73,7 +73,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
           </div>
         </div>
       </div>
-      {/* TODO: Fix tech with icons!!! */}
+      {/* TODO: refactor tech with icons!!! */}
       {/* <TechWithIcons technologies={technologies} /> */}
       <Header subTitle="Project Gallery:" customClass="my-10" />
       <Gallery images={project?.gallery!} />

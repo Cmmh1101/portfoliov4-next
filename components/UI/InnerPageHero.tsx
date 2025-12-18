@@ -17,7 +17,7 @@ const InnerPageHero: React.FC<HeaderProps> = (headerProps: HeaderProps) => {
   };
   return (
     <div
-      className="lg:container w-full mx-0 md:mx-auto h-60 md:h-80  lg:rounded-lg mb-20 shadow-lg flex justify-center flex-col items-center relative z-0 overflow-hidden"
+      className="lg:container w-full mx-0 md:mx-auto h-60 md:h-80 lg:rounded-lg mb-20 shadow-lg flex justify-center flex-col items-center relative z-0 overflow-hidden"
       style={divStyle}
     >
       <Header title={headerProps.title} customClass="text-white z-20" />

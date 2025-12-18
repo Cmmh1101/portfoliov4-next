@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
       <main
         className={`${
           darkMode ? "dark-bg text-white" : "light-bg text-black"
-        } px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 pb-10 pt-40 transition-colors duration-300`}
+        } px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 pb-10 transition-colors duration-300`}
         style={
           darkMode
             ? { color: "white" }
