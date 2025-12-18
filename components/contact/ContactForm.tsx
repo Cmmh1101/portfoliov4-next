@@ -35,11 +35,11 @@ const ContactForm = () => {
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className="p-6 mx-auto rounded-lg shadow-md text-black bg-blue-200"
+        className="p-6 mx-auto rounded-lg shadow-md text-black bg-[#a9f6f1]"
         onSubmit={handleSubmit}
       >
         {/* Netlify Hidden Inputs */}
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contact" value="contact" />
         <p className="hidden">
           <label>
             Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
