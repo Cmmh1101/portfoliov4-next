@@ -552,7 +552,7 @@ export const projects: Project[] = [
         alt: "Schema Visualizer",
       },
       {
-        src: "/images/projects/play-ball-time/play-ball-time-schema-2.png",
+        src: "/images/projects/play-ball-time/play-ball-schema-2.png",
         alt: "Schema Visualizer",
       },
     ],

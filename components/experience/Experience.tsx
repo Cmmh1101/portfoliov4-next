@@ -3,6 +3,7 @@ import Header from "../UI/Header";
 import experience from "../../data/experienceData";
 import ExperienceItem from "./ExperienceItem";
 import Head from "next/head";
+import FinalCTA from "../UI/FinalCTA";
 
 interface ExperienceItemProps {
   name: string;
@@ -33,7 +34,7 @@ const Experience = () => {
       <button
         key={i}
         onClick={() => handleExperienceClick(item.name)}
-        className={`w-full p-3 mb-5 ${
+        className={`w-60 md:w-full p-3 mb-2 ${
           item.name === activeItem?.name ? "bg-blue-600 arrow text-white" : ""
         }`}
       >
@@ -49,12 +50,13 @@ const Experience = () => {
         <meta name="description" content="Carla Montano | Tech Experience" />
       </Head>
       <main className="w-full">
-        <div className="flex w-full mt-10">
-          <div className="w-40">{buttons}</div>
+        <div className="flex flex-col md:flex-row w-full mt-5">
+          <div className="w-100 md:w-60 flex flex-wrap flex-row md:flex-col justify-around">{buttons}</div>
           <div className="w-full pl-10 md:pl-20">
             {activeItem && <ExperienceItem experience={activeItem} />}
           </div>
         </div>
+        <FinalCTA imageSrc="/images/general/Carla-Montano-Profile-Photo-4.png" />
       </main>
     </>
   );

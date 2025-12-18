@@ -71,12 +71,14 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
           </div>
         </div>
       </div>
-      {/* TODO!!! */}
+      {/* TODO: Fix tech with icons!!! */}
       {/* <TechWithIcons technologies={technologies} /> */}
       <Header subTitle="Project Gallery:" customClass="my-10" />
       <Gallery images={project?.gallery!} />
       <div className="mt-10 flex justify-center mx-auto mb-20">
-        <ButtonLink url={project?.liveLink!} title="Live Site" />
+        {project?.liveLink && project.liveLink.trim() !== "" && (
+          <ButtonLink url={project?.liveLink!} title="Live Site" />
+        )}
         {project?.githubRepo && project.githubRepo.trim() !== "" && (
           <ButtonLink url={project?.githubRepo!} title="GitHub" />
         )}
