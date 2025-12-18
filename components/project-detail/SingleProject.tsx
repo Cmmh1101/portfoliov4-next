@@ -1,10 +1,12 @@
 import { Project } from "@/components/interfaces/Project";
 import React from "react";
-import { IoIosCheckmarkCircle } from "react-icons/io";
+import { IoIosCheckmarkCircle, IoIosReturnLeft } from "react-icons/io";
 import ButtonLink from "../UI/ButtonLink";
 import Gallery from "./Gallery";
 import Header from "../UI/Header";
 import ProjectPageHero from "../UI/ProjectPageHero";
+import Link from "next/link";
+import { IoIosArrowBack } from "react-icons/io";
 
 const SingleProject: React.FC<{ project: Project | undefined }> = ({
   project,
@@ -20,6 +22,7 @@ const SingleProject: React.FC<{ project: Project | undefined }> = ({
         projectStatus={project?.status}
         projectTags={project?.tags}
       />
+<Link href='/projects' className="underline flex justify-end items-center hover:text-blue-500"><IoIosReturnLeft className="mr-2 text-lg" />Back to all projects</Link>
       <div className="mb-20 flex justify-center md:justify-between items-center flex-wrap">
         <div className="w-100 md:w-1/2">
           <Header subTitle="Project Overview" />
