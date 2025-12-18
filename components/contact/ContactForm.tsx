@@ -1,8 +1,32 @@
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import Header from "../UI/Header";
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+      setSubmitted(true);
+      form.reset();
+    } catch (error) {
+      alert('There was a problem submitting the form');
+      console.error(error);
+    }
+
+    setLoading(false);
+    setSubmitted(true)
+  };
 
   return (
     <div className="flex justify-evenly items-center w-full mt-10 md:mt-0 md:w-1/2">
@@ -12,7 +36,7 @@ const ContactForm = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="p-6 mx-auto rounded-lg shadow-md text-black bg-blue-200"
-        onSubmit={() => setSubmitted(true)}
+        onSubmit={handleSubmit}
       >
         {/* Netlify Hidden Inputs */}
         <input type="hidden" name="form-name" value="contact" />
