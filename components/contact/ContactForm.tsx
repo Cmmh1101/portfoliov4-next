@@ -18,15 +18,15 @@ const ContactForm = () => {
         <input type="hidden" name="form-name" value="contact" />
         <p className="hidden">
           <label>
-            Don't fill this out if you're human: <input name="bot-field" />
+            Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
           </label>
         </p>
 
         <Header subTitle="Leave a message!" />
         <p className="mb-6 text-center">
           Whether you have a question, need help with your project, or just want
-          to say hello — I'd love to hear from you! Fill out the form below and
-          I'll get back to you soon.
+          to say hello — I&apos;d love to hear from you! Fill out the form below and
+          I&apos;ll get back to you soon.
         </p>
         {/* Name */}
         <label className="block mb-4">
@@ -74,7 +74,7 @@ const ContactForm = () => {
         {/* Confirmation Message */}
         {submitted && (
           <p className="mt-4 text-green-600 text-center">
-            Thank you! I'll be in touch soon.
+            Thank you! I&apos;ll be in touch soon.
           </p>
         )}
       </form>
