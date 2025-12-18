@@ -561,7 +561,7 @@ export const projects: Project[] = [
     name: "rockwall-body-and-soul",
     title: "Rockwall Body and Soul Massage",
     description:
-      "Custom WordPress/Bricks site with integrated Acuity scheduling, service list, and local SEO optimization for a massage therapist.",
+      "A clean, calming, and functional WordPress website built for a solo massage therapist expanding her services in Rockwall, TX. The site includes branded design, an integrated booking system (Acuity), service descriptions with pricing, client intake forms, gift certificate options, and clear calls to action. It also includes Google Maps and reviews integration, a blog for wellness articles and seasonal updates, and a promo-ready popup system. Designed to reflect the therapist's personal touch and attract new and returning clients.",
     image:
       "/images/projects/rockwall-massage/rockwall-body-and-soul-massage-about-section.png",
     alt: "Rockwall Massage Website",
@@ -570,7 +570,7 @@ export const projects: Project[] = [
     clientType: "Client Project",
     category: "Website Design & Development",
     problemSolved:
-      "Established an online presence for a solo massage therapist with integrated scheduling and service details to attract local clients.",
+      "Transformed a word-of-mouth service into a professional online presence that simplified appointment scheduling, showcased specialized massage offerings, and supported seasonal promotions. Enabled the business owner to easily share updates, attract more clients through SEO and Google Business integration, and grow beyond solo practice—eventually onboarding a second therapist.",
     clientFeedback: "", // TODO: add feedback
     timeToBuild: "2 weeks",
     teamSize: "Solo developer",
@@ -605,7 +605,7 @@ export const projects: Project[] = [
     name: "honor-massage-therapy",
     title: "Honor Massage Therapy LLC",
     description:
-      "WordPress/Bricks site with branding, Acuity, Google Business, intake forms, and more. Full launch in under 2 weeks with 5 clients booked on day 1.",
+      "Custom WordPress website designed for a licensed massage therapist based in Bartlett, TN, offering aromatherapy, therapeutic massages, and seasonal services. The site reflects the owner's elegant brand through soft visuals and a feminine touch, integrated with Acuity for online bookings, Square for payments and gift certificates, and a contact form for inquiries. Includes service descriptions, a blog section for wellness tips and promotions, client intake forms, and Google Maps + reviews.",
     image:
       "/images/projects/honor-massage-therapy/honor-massage-therapy-add-ons.png",
     alt: "Honor Massage Therapy Website",
@@ -614,7 +614,7 @@ export const projects: Project[] = [
     clientType: "Client Project",
     category: "Website Design & Development",
     problemSolved:
-      "Provided a complete digital solution for a new massage therapy business, including online presence, branding, scheduling, and SEO setup.",
+      "Created a full digital presence for a solo practitioner transitioning from social media-only marketing to a fully branded and functional website. The new site streamlines appointment booking, promotes seasonal services and gift cards, supports SEO and local visibility, and drives client engagement with integrated booking and contact tools—resulting in multiple bookings on launch day.",
     clientFeedback: "",
     timeToBuild: "2 weeks",
     teamSize: "Solo developer",
@@ -646,7 +646,7 @@ export const projects: Project[] = [
     name: "moving-sale",
     title: "Moving Sale Store",
     description:
-      "Personal project: mini store for local moving sale with product filtering, categories, Airtable CMS, and contact form.",
+      "A custom-built personal sales page using Next.js, Airtable as a lightweight inventory backend, Tailwind CSS for styling, and deployed on Netlify. The page allows trusted friends and contacts to browse and inquire about items for sale during a personal move. Airtable is used to track stock, mark items as sold, and update listings dynamically without touching code.",
     image: "/images/projects/moving-sale/moving-sale-all-products.png",
     alt: "Moving Sale Web App",
     technologies: "Next.js, Airtable, Tailwind",
@@ -654,7 +654,7 @@ export const projects: Project[] = [
     clientType: "Personal Project",
     category: "E-commerce",
     problemSolved:
-      "Enabled quick and easy listing of items for sale during a move, with filtering and categorization to streamline the shopping experience for local buyers.",
+      "Built as a private alternative to public resale platforms like Facebook Marketplace, which had led to past unsafe or unreliable interactions. This project solved the need for a trusted, professional-looking, and easy-to-manage platform to list and update items in real time, without exposing personal data or dealing with random buyers. It streamlined the selling process in a secure and controlled way, reducing stress during a high-pressure moving period.",
     clientFeedback: "",
     timeToBuild: "5 days",
     teamSize: "Solo developer",
@@ -679,7 +679,7 @@ export const projects: Project[] = [
     name: "language-game",
     title: "Language Learning Game",
     description:
-      "Interactive vocabulary matching game built with JavaScript. Designed for language learning, especially ESL/Spanish students.",
+      "A bilingual vocabulary matching game built in just 7 days during a hackathon by a team of 3 developers. Developed using React and Reactstrap, and deployed with Netlify, the project helped users practice and reinforce Spanish and English vocabulary in a fun, interactive way. The project is currently archived and was managed using GitHub for version control.",
     image: "/images/projects/language/photo-1.png",
     alt: "Language Game",
     technologies: "JavaScript CSS HTML",
@@ -687,7 +687,7 @@ export const projects: Project[] = [
     clientType: "Personal Project",
     category: "Education / Game",
     problemSolved:
-      "Provided a fun, interactive way for students to practice and reinforce vocabulary learning, especially useful for ESL and bilingual learners.",
+      "The game addressed the need for a quick, accessible, and engaging tool to help learners build vocabulary across both languages. It provided an MVP for interactive language learning—demonstrating how small, agile teams can build useful educational tools under tight deadlines.",
     clientFeedback: "",
     timeToBuild: "7 days",
     teamSize: "Developers Team",
