@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 [functions]
   node_bundler = "esbuild"
@@ -8,6 +8,6 @@
 [dev]
   functions = "netlify/functions"
 
-[forms]
-  # Prevent form submissions from triggering Netlify Functions
-  submission-created = ""
+[plugins]
+  [[plugins]]
+    package = "@netlify/plugin-nextjs"
