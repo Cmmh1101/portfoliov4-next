@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^5.15.3",
     "@next/font": "^13.4.19",
     "@types/node": "18.14.2",
     "@types/react": "18.0.28",

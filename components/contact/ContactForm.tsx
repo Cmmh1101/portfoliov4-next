@@ -33,17 +33,17 @@ const ContactForm = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-        netlify-honeypot="bot-field"
+        data-netlify-honeypot="bot-field"
         className="p-6 mx-auto rounded-lg shadow-md text-black bg-[#a9f6f1]"
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
-        <p className="hidden">
+        {/* <p className="hidden">
           <label>
             Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
           </label>
-        </p>
+        </p> */}
 
         <Header subTitle="Leave a message!" />
         <p className="mb-6 text-center">
