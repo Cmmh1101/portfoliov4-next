@@ -37,7 +37,7 @@ const ContactForm = () => {
         className="p-6 mx-auto rounded-lg shadow-md text-black bg-[#a9f6f1]"
         onSubmit={handleSubmit}
       >
-          <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
         <p className="hidden">
           <label>
