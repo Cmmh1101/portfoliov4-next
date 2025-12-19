@@ -17,9 +17,9 @@ const Navbar = () => {
     setOpenNav(!openNav);
   };
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-3 md:px-0 border-b border-black/5 dark:border-white/10 shadow-md bg-white/80 dark:bg-[#02012e]/80 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-3 md:px-0 border-b border-black/5 dark:border-white/10 shadow-md bg-[#02012e] lg:bg-white/80 lg:dark:bg-[#02012e]/80 backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center h-20 text-3xl">
-        <Link href="/" className="w-52 h-auto z-50">
+        <Link href="/" className="w-52 h-auto z-50 p-6">
           <Image
             src={logo}
             width={100}
