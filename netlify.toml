@@ -2,12 +2,11 @@
   command = "npm run build"
   publish = "out"
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [functions]
   node_bundler = "esbuild"
 
-[dev]
-  functions = "netlify/functions"
-
-[plugins]
-  [[plugins]]
-    package = "@netlify/plugin-nextjs"
+[forms]
+  submission-created = ""
