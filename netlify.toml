@@ -1,12 +1,12 @@
 [build]
-  command = "next build"
-  publish = ".next"
+  command = "next build && next export"
+  publish = "out"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [functions]
   node_bundler = "esbuild"
 
-[dev]
-  functions = "netlify/functions"
-
 [forms]
-  submission-created = ""
+  enabled = true
