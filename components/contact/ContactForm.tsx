@@ -4,6 +4,7 @@ import Header from "../UI/Header";
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -22,10 +23,9 @@ const ContactForm = () => {
     } catch (error) {
       alert('There was a problem submitting the form');
       console.error(error);
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
-    setSubmitted(true)
   };
 
   return (
@@ -39,7 +39,7 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         {/* Netlify Hidden Inputs */}
-        <input type="hidden" name="contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <p className="hidden">
           <label>
             Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
@@ -89,9 +89,10 @@ const ContactForm = () => {
         <div className="text-center">
           <button
             type="submit"
+            disabled={loading}
             className="bg-blue-600 text-white font-semibold py-2 px-6 rounded hover:bg-blue-700"
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </div>
 

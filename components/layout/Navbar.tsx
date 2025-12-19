@@ -17,31 +17,40 @@ const Navbar = () => {
     setOpenNav(!openNav);
   };
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-black/5 dark:border-white/10 shadow-md bg-white/80 dark:bg-[#02012e]/80 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-3 md:px-0 border-b border-black/5 dark:border-white/10 shadow-md bg-white/80 dark:bg-[#02012e]/80 backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center h-20 text-3xl">
-      <Link href="/" className="w-52 h-auto z-50">
-        <Image
-          src={logo}
-          width={200}
-          height={200}
-          alt="Logo"
-          style={{ objectFit: "cover", objectPosition: "center", width: "auto", height: "auto" }}
-          priority
-        />
-      </Link>
-      <NavLinks openNav={openNav} handleToggleNav={handleToggleNav} />
-      <button className="text-white" aria-label="Aria Theme Toggle" onClick={handleToggleTheme}>
-        {darkMode ? <MdLightMode /> : <MdDarkMode />}
-      </button>
-      <button
-        aria-label="Aria Navbar Toggle"
-        className="lg:hidden text-white"
-        onClick={handleToggleNav}
-      >
-        {openNav ? <AiOutlineClose /> : <RxHamburgerMenu />}
-      </button>
+        <Link href="/" className="w-52 h-auto z-50">
+          <Image
+            src={logo}
+            width={100}
+            height={100}
+            alt="Logo"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+              width: "auto",
+              height: "auto",
+            }}
+            priority
+          />
+        </Link>
+        <NavLinks openNav={openNav} handleToggleNav={handleToggleNav} />
+        <button
+          className="text-white"
+          aria-label="Aria Theme Toggle"
+          onClick={handleToggleTheme}
+        >
+          {darkMode ? <MdLightMode /> : <MdDarkMode />}
+        </button>
+        <button
+          aria-label="Aria Navbar Toggle"
+          className="lg:hidden text-white"
+          onClick={handleToggleNav}
+        >
+          {openNav ? <AiOutlineClose /> : <RxHamburgerMenu />}
+        </button>
       </div>
-      </nav>
+    </nav>
   );
 };
 
