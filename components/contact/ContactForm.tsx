@@ -8,7 +8,6 @@ const ContactForm = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-
     const form = e.currentTarget;
     const formData = new FormData(form);
 
