@@ -23,20 +23,20 @@ const ExperienceItem: React.FC<{ experience: ExperienceItemProps }> = ({
       <div className="flex items-center">
         {experience?.image && (
           <div className="w-1/4 mr-2">
-          <Image
-            src={experience?.image!}
-            alt="Company Logo"
-            width={120}
-            height={120}
-            className="mr-3 rounded-md bg-[#010024] block p-3"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-              width: "auto",
-              height: "auto",
-            }}
-          />
-            </div>
+            <Image
+              src={experience?.image!}
+              alt="Company Logo"
+              width={120}
+              height={120}
+              className="mr-3 rounded-md bg-[#010024] block p-3"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                width: "auto",
+                height: "auto",
+              }}
+            />
+          </div>
         )}
         <h2 className="font-bold text-2xl md:text-3xl">{experience?.title}</h2>
       </div>

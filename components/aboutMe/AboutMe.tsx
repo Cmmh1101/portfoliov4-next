@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="flex justify-center items-center flex-col">
         {aboutMeSections.map((content, i) => {
           return (
-            <div key={i} className="flex flex-col items-center justify-center py-20">
+            <div key={i} className="flex flex-col items-center justify-center py-10">
               <div className={`flex flex-col md:flex-row items-center ${i % 2 !== 0 &&'md:flex-row-reverse'}`}>
                 <div className="md:w-1/2">
                   <div className="section-image relative mx-auto">
