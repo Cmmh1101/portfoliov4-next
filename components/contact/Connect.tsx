@@ -13,7 +13,7 @@ const Connect = () => {
         <Link href='https://www.linkedin.com/in/carla-montano/' className={iconClasses} target='_blank'><RiLinkedinBoxLine /></Link>
       <Link href='https://github.com/Cmmh1101' className={iconClasses} target='_blank'><SiGithub /></Link>
       <Link href='https://www.instagram.com/carlamontanotech/' className={iconClasses} target='_blank'><SiInstagram /></Link>
-        <Link href='/https://www.youtube.com/@carlamontanotech' className={iconClasses} target='_blank'><SiYoutube /></Link>
+        <Link href='https://www.youtube.com/@carlamontanotech' className={iconClasses} target='_blank'><SiYoutube /></Link>
       </div>
   )
 }
