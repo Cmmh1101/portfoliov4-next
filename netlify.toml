@@ -5,5 +5,11 @@
 [functions]
   node_bundler = "esbuild"
 
+[dev]
+  functions = "netlify/functions"
+
 [forms]
   submission-created = ""
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
