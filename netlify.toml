@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[functions]
+  node_bundler = "esbuild"
+
+[dev]
+  functions = "netlify/functions"
+
+[forms]
+  # Prevent form submissions from triggering Netlify Functions
+  submission-created = ""
