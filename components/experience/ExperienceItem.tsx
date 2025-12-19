@@ -22,6 +22,7 @@ const ExperienceItem: React.FC<{ experience: ExperienceItemProps }> = ({
     <div className="mt-10 md:mt-0">
       <div className="flex items-center">
         {experience?.image && (
+          <div className="w-1/4 mr-2">
           <Image
             src={experience?.image!}
             alt="Company Logo"
@@ -35,6 +36,7 @@ const ExperienceItem: React.FC<{ experience: ExperienceItemProps }> = ({
               height: "auto",
             }}
           />
+            </div>
         )}
         <h2 className="font-bold text-2xl md:text-3xl">{experience?.title}</h2>
       </div>
